@@ -1,0 +1,2 @@
+# wx-JadeSale
+weixin app 
