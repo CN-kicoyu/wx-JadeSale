@@ -1,0 +1,7 @@
+<template name="score">
+    <view class="score">
+        <block wx:for="{{score}}">
+            <image class="star" data-index="{{index}}" catchtap="checkStar" src="{{item.actived? '/images/icon/star-on.png' : '/images/icon/star-off.png'}}"></image>
+        </block>
+    </view>
+</template>

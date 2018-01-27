@@ -1,0 +1,21 @@
+<import src="../../wxParse/wxParse.wxml"/> 
+
+<view class="firstRead-box">
+  <view class="wrap"></view>
+  <view class="logo">
+      <image src="http://ohcaq1mqd.bkt.clouddn.com/bg-02.png" class="bg"></image>
+      <image src="/images/icon/logo.png" class="img"></image>
+      <text class="logo-title">通天珠宝</text>
+  </view>
+  <view class="title">
+      <text class="hr"><text class="circle"></text></text>
+      <text style="margin:0 30rpx;">{{dataInfo.title}}</text>
+      <text class="hr"><text class="circle" style="left:-12rpx"></text></text>
+  </view>
+  
+  <view class="content">
+   <template is="wxParse" data="{{wxParseData:article_content.nodes}}"/>
+  </view>
+
+<button type="default" hover-class="button-hover" class="btn" bindtap="bindButtonTap" > 我已知晓规则 </button>
+</view>

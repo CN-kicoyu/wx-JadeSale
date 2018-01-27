@@ -1,0 +1,39 @@
+<import src="/template/pay/pay.wxml" />
+<import src="../../wxParse/wxParse.wxml"/> 
+
+<view wx:if="{{!isPayShow}}">
+  <swiper class="cdetail-img">
+    <swiper-item  class="cdetail-img" wx:for="{{goodsInfo.goodsGallery}}">
+      <image src="{{item.img_url}}"/>
+    </swiper-item>
+  </swiper>
+  <view class="cdetail-head">
+    <view class="cdetail-head-title">
+      <text>{{goodsInfo.goodsinfo.goods_name}}</text>
+    </view>
+    <view class="col2-price">
+      <image src="/images/icon/change-red.png"></image>
+      <text class="col2-price-current">{{goodsInfo.exchange.exchange_integral}}</text>
+      <view class="col2-price-old">
+        <text>现金价:</text>
+        <text class="old-price">￥{{goodsInfo.goodsinfo.shop_price}}
+          <text class="text-del"></text>
+        </text>
+      </view>
+    </view>
+  </view>
+  <view class="cdetail-content">
+    <view class="more-title">
+      <image src="/images/icon/detail-02.png"></image>
+      <text>详情说明</text>
+    </view>
+    <view class="cdetail-instruction">
+      <template is="wxParse" data="{{wxParseData:article_content.nodes}}"/>
+    </view>
+  </view>
+  <view class="cdetail-btn" catchtap="changeShow">立即兑换</view>
+</view>
+<view wx:else>
+<template is="pay" data="{{isAddressShow:isAddressShow,dataHeight:dataHeight,isShow:isShow,orderConfirm:orderConfirm}}"></template>
+ <view class="cdetail-btn" catchtap="gotoOrder">确认兑换</view>
+ </view>

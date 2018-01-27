@@ -1,0 +1,14 @@
+<text class="warn">温馨提示：该模块填写后不可修改，后续申请将以此为依据，请谨慎填写！</text>
+<view class="inputlist">
+  <text>真实姓名：</text>
+  <input type="text" value="{{userIdentity.realname}}" class="input" bindinput="realNameInput"/>
+</view>
+<view class="inputlist">
+  <text>身份证号码：</text>
+  <input type="text" value="{{userIdentity.idcard}}" class="input" bindinput="idcardInput"/>
+</view>
+<view class="inputlist">
+  <text>邮箱：</text>
+  <input type="text" value="{{userIdentity.email}}" class="input" bindinput="eamilInput"/>
+</view>
+<button form-type="submit" type="default" loading="{{isloading}}" hover-class="button-hover" class="btn" bindtap="bindButtonTap" disabled="{{btnDisabled}}" > 确认绑定 </button>

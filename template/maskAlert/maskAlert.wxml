@@ -1,0 +1,46 @@
+<template name="maskAlert">
+  <view class="maskdiv">
+    <view class="mask-container">
+      <view class="mask-title">
+        <text wx:if="{{type === 'remind'}}">设置提醒</text>
+        <text wx:if="{{type === 'bid'}}">出价</text>
+        <icon type="cancel" size="14" class="icon-close" catchtap="closeBox" color="#333"/>
+      </view>
+      <view class="mask-content">
+        <view class="mask-section" wx:if="{{type === 'remind'}}">
+          <view class="flex-row">
+            <text>提醒时间：</text>
+            <view class="mask-check">
+              <view>
+                <icon type="success" size="14" style="{{isCheck ? 'color:#f15352' : 'color:#cccccc'}}" data-index="before" catchtap="checkPay" class="icon-check"/>
+                <text>开拍前五分钟提醒</text>
+              </view>
+              <view>
+                <icon type="success" size="14" style="{{isCheck ? 'color:#f15352' : 'color:#cccccc'}}" data-index="before" catchtap="checkPay" class="icon-check"/>
+                <text>结束前30分钟提醒</text>
+              </view>
+            </view>
+          </view>
+          <view class="flex-col">
+            <text>提醒方式：</text>
+            <text class="mask-phone">短信提醒方式：17797698875</text>
+          </view>
+        </view>
+        <view class="mask-section" wx:if="{{type === 'bid'}}">
+          <view class="bid-infos">
+            <text>当前最高价：￥5000，00</text>
+            <text class="bid-margin">加价幅度：￥100.00</text>
+            <view class="info-num">
+                <button type="default" disabled="{{good.num==1}}" class="left" catchtap="reduceNum" data-index="{{index}}">-</button>
+                <input type="text" value="{{good.num}}" data-index="{{index}}"/>
+                <button type="default" class="right" catchtap="addNum" data-index="{{index}}">+</button>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="mask-btn">
+        <view class="btn-comfirm" data-type="{{type}}" catchtap="sureClick">确定</view>
+      </view>
+    </view>
+  </view>
+</template>

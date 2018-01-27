@@ -1,0 +1,18 @@
+<view class="line" catchtap="gotoMyset">
+  <view>
+    <image src="/images/icon/icon_3.png" class="icon"></image>
+    <text class="title">个人资料</text>
+  </view>
+  <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+</view>
+<view class="line" catchtap="gotoSafe">
+  <view>
+    <image src="/images/icon/icon_4.png" class="icon"></image>
+    <text class="title">账户与安全</text>
+  </view>
+  <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+</view>
+
+<view class="line" style="margin-top:20rpx;justify-content:center" catchtap="gotoSignIn">
+   <text style="color:red;">退出账号</text>
+</view>

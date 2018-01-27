@@ -1,0 +1,35 @@
+<view class="nav-contain">
+  <view class="head">
+    <view class="line">
+      <text class="title">充值账户</text>
+      <text>{{appinfo.username}}</text>
+    </view>
+    <view class="line">
+      <text class="title">兑币余额</text>
+      <text>￥{{wallet}}</text>
+    </view>
+    <view class="line">
+      <text class="title">玉豆余额</text>
+      <text class="blue">￥{{coin}}</text>
+    </view>
+  </view>
+  <text class="name">兑换额度</text>
+  <view class="line">
+    <text class="title">兑换金额</text>
+    <input type="number" class="ji-input"value="{{amount}}" class="input" bindinput="amountInput" />
+  </view>
+  <!--<view class="line">
+    <text class="title">兑换方式</text>
+    <text>积分兑换</text>
+  </view>-->
+  <text class="name">兑换说明</text>
+  <view class="tip">
+    <text>1. 兑换比率为1：{{appinfo.exchange[2]}}</text>
+  </view>
+  <view class="tip">
+    <text>2. 玉豆可用来竞猜</text>
+  </view>
+  <view class="btn">
+    <button type="default" loading="{{isloading}}" form-type="submit" class="check-btn" bindtap="bindButtonTap" disabled="{{btnDisabled}}"> 确定 </button>
+  </view>
+</view>

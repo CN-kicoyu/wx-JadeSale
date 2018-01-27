@@ -1,0 +1,12 @@
+<block  wx:for="{{notice}}" wx:key="unique">
+  <view class="announce-item">
+    <image src="/images/icon/announce.png" class="announce-img"></image>
+    <view class="announce-wrap">
+      <text class="announce-title">{{item.title}}</text>
+      <text class="announce-date">{{item.publish_time}}</text>
+      <view class="announce-content">
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+  </view>
+</block>

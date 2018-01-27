@@ -1,0 +1,55 @@
+@import "/template/exhibitShow/exhibitShow.wxss";
+@import "/template/auctionNew/auctionNew.wxss";
+
+page {
+    background: white;
+}
+.banner, .banner image {
+  width:100%;
+  height:386rpx;
+}
+.scroll-shows{
+    width:100%;
+    white-space: nowrap;
+    margin-left: 30rpx;
+}
+.subshow,.subgoods {
+    margin-right: 20rpx;
+    display: inline-flex;
+    flex-direction: column;
+}
+.subshow {
+    width:350rpx;
+}
+.subgoods {
+    width:250rpx;
+}
+.title-divi {
+    padding:0 30rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:22rpx 0 16rpx;
+}
+.title {
+    border-left: 5rpx solid #009cf6;
+    line-height:26rpx;
+    padding-left:10rpx;
+}
+.more text{
+    color:#aaa;
+    margin-right: 10rpx;
+}
+.more image{
+    width:11rpx;
+    height:19rpx;
+}
+.hr {
+  height:1px;
+  background: #ccc;
+  margin:25rpx 30rpx 5rpx;
+}
+.auction-news {
+    padding:0 30rpx;
+}

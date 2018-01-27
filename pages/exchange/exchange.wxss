@@ -1,0 +1,66 @@
+page {
+    background: white;
+}
+.exchange-head {
+    height:188rpx;
+    background:#ffcf55;
+    color:white;
+    text-align: center;
+    padding:50rpx 0 10rpx;
+}
+.head-account {
+    font-size:60rpx;
+    font-weight: bolder;
+    display: block;
+}
+.exchange-entry {
+    background: white;
+    padding:25rpx 0;
+    display: flex;
+    text-align: center;
+    border-bottom:20rpx solid #eee;
+}
+.exchange-hr {
+    height:50rpx;
+    width:1px;
+    background: #ccc;
+}
+
+.exchange-entry-icon {
+    flex:1;
+    line-height:46rpx;
+}
+.exchange-entry-icon image {
+    width:38rpx;
+    height:36rpx;
+    margin-right:20rpx;
+    vertical-align: middle;
+}
+.exchange-list {
+    background: white;
+    padding:0 30rpx;
+}
+.exchange-list-item {
+    padding:20rpx 0;
+    border-bottom:1px dashed #ccc;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.exchange-item-time {
+    display: block;
+    color:#999;
+    font-weight: normal;
+    margin-top:7rpx;
+}
+.exchange-item-right {
+    text-align:right;
+}
+.exchange-txt {
+    display: block;
+    width:460rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

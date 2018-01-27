@@ -1,0 +1,55 @@
+<template name="orderComment">
+  <view class="order-item"  data-index="{{order_id}}" catchtap="orderDetail">
+    <view class="order-item-title">
+      <view>
+        <text>{{extension_code_name}}</text>
+        <image src="/images/icon/arrow-right.png" class="order-item-arrow"></image>
+      </view>
+      <view class="order-item-status">
+        <text wx:if="{{order_status == 1 && pay_status == 0 && shipping_status == 0}}">待付款</text>
+        <text wx:elif="{{(order_status == 1 || order_status == 5 || order_status == 6) && pay_status == 2  && (shipping_status == 0 || shipping_status == 1 || shipping_status == 3 || shipping_status == 4 || shipping_status == 5 || shipping_status == 6 )}}">待收货</text>
+        <text wx:elif="{{order_status == 5 && pay_status == 2 && shipping_status == 2}}">待评论</text>
+        <text wx:elif="{{order_status == 5 && pay_status == 2 && shipping_status == 2}}">已完成</text>
+        <text wx:elif="{{order_status == 2 && pay_status == 0 && shipping_status == 0}}">已取消</text>
+      </view>
+    </view>
+    <block wx:for="{{goods}}">
+    <view class="inbasket-content">
+      <image src="{{item.goods_img}}"></image>
+      <view class="content-info">
+        <text class="info-title">{{item.goods_name}}</text>
+        <text class="info-attr">颜色：褐色；尺码：均码 </text>
+        <view class="info-buy">
+          <text>¥{{item.goods_price}}</text>
+          <text>x{{item.goods_number}}</text>
+        </view>
+      </view>
+    </view>
+    </block>
+    <view class="order-item-data">
+      <text>{{add_time}}</text>
+      <view>
+      <text>共{{number}}件商品，实付：</text>
+      <text class="order-item-money">¥{{goods_amount}}</text>
+      </view>
+    </view>
+
+
+    <view wx:if="{{isBtnShow}}">
+      <view class="order-item-btn" wx:if="{{order_status == 1 && pay_status == 0 && shipping_status == 0}}">
+        <text data-index="{{order_id}}" catchtap="invalid">取消订单</text>
+        <text data-index="{{order_id}}" data-pay="{{pay_id}}" catchtap="payment">去结账</text>
+      </view>
+      <view class="order-item-btn" wx:elif="{{(order_status == 1 || order_status == 5 || order_status == 6) && pay_status == 2  && (shipping_status == 0 || shipping_status == 1 || shipping_status == 3 || shipping_status == 4 || shipping_status == 5 || shipping_status == 6 )}}">
+        <text data-index="{{order_id}}" catchtap="gotoShipping" disabled="{{btnDisabled}}">确认收货</text>
+      </view>
+      <view class="order-item-btn" wx:elif="{{order_status == 5 && pay_status == 2 && shipping_status == 2}}">
+        <text data-index="{{order_id}}" catchtap="gotoComment">评论</text>
+      </view>
+      <view class="order-item-btn" wx:elif="{{(order_status == 2 || order_status == 5) && (pay_status == 0 || pay_status == 2)  && (shipping_status == 0 || shipping_status == 2)}}">
+        
+      </view>
+    </view>
+
+  </view>
+</template>

@@ -1,0 +1,17 @@
+<!--pages/firstRead/firstRead.wxml-->
+<view class="wrap"></view>
+<view class="logo">
+    <image src="http://ohcaq1mqd.bkt.clouddn.com/bg-02.png" class="bg"></image>
+    <image src="/images/icon/logo.png" class="img"></image>
+    <text class="logo-title">通天珠宝</text>
+</view>
+<view class="title">
+    <text class="hr"><text class="circle"></text></text>
+    <text style="margin:0 30rpx;">我要成为合伙人</text>
+    <text class="hr"><text class="circle" style="left:-12rpx"></text></text>
+</view>
+<view class="content">
+    <text class="name"><text style="color:red">*</text> 申请理由:</text>
+    <textarea  class="texts" bindinput="concentInput" placeholder="请输入申请理由"/>
+</view>
+<button form-type="submit" type="default" loading="{{isloading}}" hover-class="button-hover" class="btn" bindtap="bindButtonTap" disabled="{{btnDisabled}}" > 提交申请 </button>

@@ -1,0 +1,132 @@
+@import "/template/goodCol2/goodCol2.wxss";
+
+.product-title {
+  text-align: center;
+  padding: 0 0 30rpx;
+}
+
+.title-name {
+  font-size: 30rpx;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10rpx;
+  position: relative;
+}
+.bg {
+  background: #16222a;
+  height: 67rpx;
+}
+.logo {
+  display: block;
+  width:90rpx;
+  height: 108rpx;
+  margin: -60rpx auto 0;
+}
+.title-dot {
+  display: inline-block;
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #333;
+  margin: 0 20rpx;
+  vertical-align: middle;
+}
+
+.scroll-view_H {
+  height: 85rpx;
+  line-height: 85rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  border-bottom:1px solid #dedede;
+  overflow: hidden;
+}
+
+.items {
+  height: 80rpx;
+  width: 120rpx;
+  line-height: 80rpx;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.items.active {
+  border-bottom:4rpx solid #ffcf55;
+}
+
+.title-hr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom:1px solid #dedede;
+}
+.title-hr > text {
+  flex:1;
+  padding: 20rpx 0;
+}
+.title-hr > text.active {
+  border-bottom:4rpx solid #ffcf55;
+}
+.product-basket {
+  position: absolute;
+  top: 0;
+  right: 30rpx;
+}
+
+.product-basket image {
+  width: 38rpx;
+  height: 38rpx;
+}
+
+.basket-num {
+  background: #65b5ff;
+  width: 26rpx;
+  height: 26rpx;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: -10rpx;
+  right: -10rpx;
+  border:1px solid #fff;
+  font-size:21rpx;
+}
+
+
+.good-basket {
+    width:46rpx;
+    height:46rpx;
+    border-radius:50%;
+    position:absolute;
+    top:0;
+    right:0;
+    margin:10px;
+}
+.good-basket image {
+    width:30rpx;
+    height:30rpx;
+    position:absolute;
+    top:8rpx;
+    left:9rpx;
+}
+.index-intro-goods {
+  --background: white;
+}
+
+
+.basket-none-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ccc;
+}
+
+.basket-none {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 29% auto 30rpx;
+}

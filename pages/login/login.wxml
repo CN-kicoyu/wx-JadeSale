@@ -1,0 +1,12 @@
+<view class="header">
+  <image src="/images/login-bg.jpg" class="bg"></image>
+</view>
+
+<view class="fixed-box">
+  <image src="/images/logo.png" class="logo"/>
+  <text class="text">全球分享经济呈快速发展态势，是拉动经济增长的新路子，经济再次被推倒重建 ，消费商将成就一大批富翁！</text>
+  <view class="btns">
+    <text class="borderR" catchtap="goRegister">注册</text>
+    <text catchtap="goSignin">登陆</text>
+  </view>
+</view>

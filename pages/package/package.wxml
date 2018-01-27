@@ -1,0 +1,21 @@
+<view class="nav-contain">
+  <block wx:for="{{displayTmp}}">
+    <view class="adisplay-wrap" catchtap="onDisplayDetail" data-id="{{item.displayID}}">
+      <image src="{{item.surface}}"></image>
+      <view class="adisplay-info" style="margin-top:50rpx">
+        <view class="adisplay-info-wrap">
+          <text>消费商高端套餐</text>
+          <view class="adisplay-info-hr"></view>
+        </view>
+      </view>
+    </view>
+    <scroll-view class="adisplay-goods" scroll-x="{{true}}" scroll-left="{{0}}" scroll-with-animation="{{true}}">
+      <block wx:for="{{item.subGoods}}">
+        <view class="adisplay-goods-img" catchtap="onAuctionDetail">
+          <image src="{{item.imgURL}}" mode="{{aspectFit}}"></image>
+          <view class="adisplay-goods-mask">￥{{item.price}}.00</view>
+        </view>
+      </block>
+    </scroll-view>
+  </block>
+</view>

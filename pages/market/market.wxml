@@ -1,0 +1,5 @@
+<import src="../../template/shareItem/shareItem.wxml" />
+<template is="shareItem"></template>
+<template is="shareItem"></template>
+<template is="shareItem"></template>
+<template is="shareItem"></template>

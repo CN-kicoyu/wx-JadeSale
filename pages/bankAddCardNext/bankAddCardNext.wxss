@@ -1,0 +1,42 @@
+.info {
+  padding:20rpx 30rpx;
+  display: block;
+  color:#ccc;
+}
+.inputlist {
+  border-bottom:1px solid #dedede;
+  padding: 25rpx 30rpx;
+  background:white;
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.inputlist text {
+  color:#ccc;
+  margin-right:30rpx;
+}
+.inputlist .input {
+  font-family:"PingFang SC","Helvetica Neue","Microsoft Yahei",STHeiti,Tahoma,Simsun,Arial,sans-serif;
+  font-size: 26rpx;
+}
+.next {
+  margin-top: 134rpx;
+  text-align: center;
+}
+
+.next .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button[type="default"].check-btn {
+  width: 626rpx;
+  color: #fff;
+  font-size: 26rpx;
+  padding: 15rpx 0;
+  background: #ffcf55;
+}
+button[disabled][type="default"].check-btn {
+  background: #aaa;
+}

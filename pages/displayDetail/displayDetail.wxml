@@ -1,0 +1,39 @@
+<import src="../../template/maskAlert/maskAlert.wxml" />
+<view class="display-head">
+  <image src="{{displayTmp.surfaceBig}}"></image>
+  <view class="display-head-title">
+    <image src="/images/icon/appointment2.png"></image>
+    <text>还剩1天03:49:57结束</text>
+  </view>
+</view>
+<view class="display-info">
+  <text>{{displayTmp.autor}}</text>
+  <text>拍品数量：{{displayTmp.subGoods.length}}件</text>
+  <text>围观人数：2014</text>
+</view>
+<view class="display-lists">
+  <block wx:for="{{displayTmp.subGoods}}">
+    <view class="inbasket-content" catchtap="onAuctionDetail">
+    <image src="{{item.imgURL}}"></image>
+    <view class="content-info">
+      <text class="info-title">{{item.title}}</text>
+      <view class="info-remind">
+        <text class="info-attr">匠人：{{item.autor}}</text>
+        <view class="info-remaind-img" catchtap="onRemind" data-type="remind" wx:if="{{!isRemind}}">
+          <image src="/images/icon/remind-off.png"></image>
+          <text class="info-attr">设置提醒</text>
+        </view>
+        <view class="info-remaind-img" wx:else catchtap="onCancel">
+          <image src="/images/icon/remind-on.png"></image>
+          <text class="info-attr" style="color:#15a4ff">已设提醒</text>
+        </view>
+      </view>
+      <view class="info-buy">
+        <text class="info-buy-price">当前价格：<text style="color:#f96b69;font-weight: bolder;">¥{{item.price}}.00</text></text>
+        <text>({{item.bidNum}}人竞拍)</text>
+      </view>
+    </view>
+  </view>
+  </block>
+</view>
+<template is="maskAlert" wx:if="{{maskbox}}" data="{{type}}"></template>

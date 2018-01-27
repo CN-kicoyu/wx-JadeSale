@@ -1,0 +1,98 @@
+@import "../../template/comment/comment.wxss";
+
+page {
+  background: white;
+}
+
+.mdetail-person {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  height: 102rpx;
+  align-items: center;
+}
+
+.share-author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.share-avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 100%;
+  margin-right: 20rpx;
+}
+
+.share-vip {
+  width: 25rpx;
+  height: 25rpx;
+  margin-left: 12rpx;
+}
+
+.index-banner, .index-banner image {
+  width: 100%;
+  height: 750rpx;
+}
+
+.mdetail-text {
+  padding: 25rpx 30rpx 0;
+  border-bottom: 1px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.mdetail-text > text {
+  margin-bottom: 25rpx;
+}
+
+.share-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 62rpx;
+  position: fixed;
+  background: white;
+  width:100%;
+  border-top:1px solid #dedede;
+  bottom: 0;
+  left: 0;
+}
+
+.share-icon > view  image {
+  width: 30rpx;
+  height: 26rpx;
+  margin-right: 10rpx;
+  position: relative;
+  top: 3rpx;
+}
+
+.mdetail-input {
+  background: #fff;
+  padding: 20rpx 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mdetail-input >input {
+  background: #ffefef;
+  flex: 1;
+  padding: 15rpx 20rpx;
+}
+
+.mdetail-input-avator {
+  display: inline-block;
+  width: 58rpx;
+  height: 58rpx;
+  border-radius: 100%;
+  background: #ffefef;
+  margin-right: 20rpx;
+}
+
+.mdetail-comments {
+  padding: 0 30rpx;
+}

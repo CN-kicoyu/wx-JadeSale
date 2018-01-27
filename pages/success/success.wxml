@@ -1,0 +1,3 @@
+<image src="http://ohcaq1mqd.bkt.clouddn.com/bg-03.jpg" class="img"></image>
+<text clclass="text">交易成功</text>
+<button form-type="submit" type="default" loading="{{isloading}}" hover-class="button-hover" class="btn" bindtap="bindButtonTap" disabled="{{btnDisabled}}" > 返回 </button>

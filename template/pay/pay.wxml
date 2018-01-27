@@ -1,0 +1,50 @@
+<template name="pay">
+  <view class="pay">
+    <view class="pay-head">
+      <image src="/images/icon/close.png" class="pay-close" catchtap="backPay"></image>
+      <text class="pay-head-tip">应支付金额</text>
+      <text class="pay-head-money">¥ {{isShow ? 0 : orderConfirm.total.price}}</text>
+      <view wx:if="{{isShow}}">
+        <icon type="success" size="14" color="#f15352" class="pay-head-check" />
+        <text>可用兑币抵扣 ￥{{orderConfirm.exchange_integral}}</text>
+      </view>
+    </view>
+    <view class="pay-content">
+    <scroll-view scroll-y="true" style="{{'height:'+(windowHeight-225)+'px;'}}">
+      <view class="pay-address" wx:if="{{isAddressShow}}">
+        <view class="pay-address-title">
+          <text>配送地址</text>
+          <view class="pay-title-change" catchtap="address">
+            <text>更改地址</text>
+            <image src="/images/icon/arrow-right.png"></image>
+          </view>
+        </view>
+        <view class="pay-address-info">
+          <view>
+            <text style="margin-right:40rpx;">{{orderConfirm.userAddress.consignee}}</text>
+            <text>{{orderConfirm.userAddress.mobile}}</text>
+          </view>
+          <view>
+            <text>{{orderConfirm.userAddress.country}} {{orderConfirm.userAddress.province}}{{orderConfirm.userAddress.city}}{{orderConfirm.userAddress.district }}{{orderConfirm.userAddress.address}}</text>
+          </view>
+        </view>
+        <image src="/images/index/hr.jpg" class="pay-info-end"></image>
+      </view>
+      <view class="bankpay">
+      </view>
+      <view class="pay-goods" wx:if="{{!isShow}}">
+        <block wx:for="{{orderConfirm.payment}}">
+          <view class="pay-item" data-index="{{index}}"  catchtap="checkPay">
+            <view>
+              <image src="{{item.thumb}}" class="pay-bank-icon"></image>
+              <text>{{item.pay_name}}</text>
+            </view>
+            <icon type="{{item.isCheck ? 'success' : 'circle'}}" size="14" class="inbasket-check" style="{{item.isCheck ? 'color:#f15352' : 'color:#cccccc'}}" />
+          </view>
+        </block>
+      </view>
+      </scroll-view>
+    </view>
+  </view>
+ 
+</template>

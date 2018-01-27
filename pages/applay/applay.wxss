@@ -1,0 +1,143 @@
+/* pages/applay/applay.wxss */
+.total {
+  margin-top:112rpx;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding:25rpx 0;
+  background: white;
+}
+.mt{
+  margin-top:112rpx;
+  display: flex;
+  flex-direction: row;
+}
+.one {
+  flex:1;
+  padding:25rpx 0;
+}
+.num {
+  display: block;
+  font-size:36rpx;
+  font-weight:bold;
+  margin-bottom:20rpx;
+}
+.exchange-list{
+    padding:30rpx 20rpx;
+    background: white;
+    margin:25rpx 30rpx;
+    border-radius:4rpx;
+}
+.exchange-list-item {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.exchange-item-time {
+    display: block;
+    color:#999;
+    font-weight: normal;
+    margin-top:7rpx;
+}
+.exchange-item-right {
+    text-align:right;
+}
+.exchange-txt {
+    display: block;
+    width:460rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.exchange-item-text{
+    display: block;
+    width:100%;
+    color:red;
+}
+.exchange-item-img{
+    margin-top:20rpx;
+    display: block;
+    width:100%;
+}
+.exchange-item-img image{
+    display: block;
+    max-width:100%;
+    height:300rpx;
+}
+.ccc {
+  color:#ccc;
+}
+.wait {
+  color:#da2eff;
+}
+.wrong {
+  color:red;
+}
+.yes {
+  color:#ffcf55;
+}
+.circle {
+  width:60rpx;
+  height:60rpx;
+  background: #ffcf55;
+  border-radius:100%;
+  color:white;
+  line-height:60rpx;
+  text-align:center;
+  margin-right:20rpx;
+}
+.return .circle {
+  background: #55a1ff;
+}
+.return .yes {
+  color:#55a1ff;
+}
+
+
+.basket-none-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ccc;
+}
+
+.basket-none {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 29% auto 30rpx;
+}
+
+
+
+
+
+.order-fixed {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+}
+.order-nav {
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: white;
+  margin-bottom: 20rpx;
+  border-bottom:1px solid #dedede;
+}
+
+.order-nav > text {
+  display: block;
+  color: #999;
+  font-size: 26rpx;
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.order-nav > text.actived {
+  border-bottom: 2px solid #ffcf55;
+  color: #ffcf55;
+  font-weight: bold;
+}

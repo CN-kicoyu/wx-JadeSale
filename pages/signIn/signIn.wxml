@@ -1,0 +1,36 @@
+<form bindsubmit="formSubmit" >
+<view class="signin-avator">
+  <image src="/images/icon/logo.png"></image>
+</view>
+<view class="signin-wrap">
+  <text>用户名</text>
+  <view class="user">
+    <input focus="{{focus}}" class="sign-input" bindinput="userInput"/>
+    <image src="/images/icon/icon_user.png" />
+  </view>
+</view>
+<view class="signin-wrap">
+  <text>密码</text>
+  <view class="user">
+    <input focus="{{focus}}" class="sign-input" password="{{true}}"  bindinput="pswInput" maxlength="20"/>
+    <image src="/images/icon/icon_lock.png" />
+  </view>
+</view>
+<!--<view class="signin-password">
+<label>
+    <checkbox value="no" checked="{{false}}" color="#f96b69"/>记住密码
+</label>
+<text catchtap="onRegister">忘记密码？</text>
+</view>-->
+<button type="default" loading="{{isloading}}" plain="{{true}}" form-type="submit" hover-class="button-hover" class="btn"  bindtap="bindButtonTap" disabled="{{btnDisabled}}"> 登录 </button>
+</form>
+<view class="other">
+  <view class="infos">
+    <text class="hr"></text>
+    <text class="text">用社交平台登录</text>
+    <text class="hr"></text>
+  </view>
+  <view class="imgicons">
+    <image src="/images/icon/logo-weixin.png" class="weixin" bindtap="bindweixin" ></image>
+  </view>
+</view>

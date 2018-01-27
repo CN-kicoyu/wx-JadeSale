@@ -1,0 +1,102 @@
+@import "/template/pay/pay.wxss";
+@import "../../wxParse/wxParse.wxss";
+
+
+.cdetail-img {
+    width:100%;
+    height:452rpx;
+    display:block;
+
+}
+.cdetail-head {
+  background:white;
+  padding:20rpx 30rpx;
+
+}
+.cdetail-head-title {
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.col2-price {
+  display: flex;
+  flex-direction: row;
+  padding-top: 14rpx;
+  align-items: center;
+}
+
+.col2-price > image {
+  width: 32rpx;
+  height: 26rpx;
+  margin-right: 12rpx;
+}
+
+.col2-price-current {
+  font-size: 30rpx;
+  font-weight: bold;
+  color:#ffcf55;
+}
+
+.col2-price-old {
+  font-size: 20rpx;
+  color: #999;
+  margin-left:50rpx;
+
+}
+
+.old-price {
+  position: relative;
+}
+
+.text-del {
+  display: block;
+  width: 105%;
+  position: absolute;
+  height: 1px;
+  background: #ccc;
+  top: 50%;
+  left: 0;
+}
+.more-title {
+  padding: 20rpx 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.more-title image {
+  width: 26rpx;
+  height: 26rpx;
+  margin-right: 20rpx;
+  position: relative;
+  top: 6rpx;
+}
+.cdetail-content{
+  background: white;
+  margin-top:20rpx;
+  padding:0 30rpx 120rpx;
+}
+
+.cdetail-instruction {
+  padding-top:30rpx;
+}
+.cdetail-instruction > text:first-child {
+  color:#4095fe;
+  font-weight: bold; 
+}
+
+.cdetail-instruction > text:last-child {
+  padding-left:20rpx;
+  display:block;
+  margin-top: 10rpx;
+}
+
+.cdetail-btn {
+  height: 88rpx;
+  width:100%;
+  line-height: 88rpx;
+  color:white;
+  text-align: center;
+  position: fixed;
+  bottom:0;
+  left:0;
+  background: #ffcf55;
+}

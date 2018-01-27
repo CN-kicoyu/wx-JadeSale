@@ -1,0 +1,14 @@
+<template name="walletList">
+  <view class="exchange-list">
+      <view class="exchange-list-item">
+        <view>
+          <text class="exchange-txt">{{description}}</text>
+          <text class="exchange-item-time">{{create_time}}</text>
+        </view>
+        <view class="exchange-item-right">
+          <text style="{{amount>0 ? 'color:#da2eff' : 'color:#43ef00'}}">{{amount}}</text>
+          <text class="exchange-item-time">{{balance}}</text>
+        </view>
+      </view>
+  </view>
+</template>

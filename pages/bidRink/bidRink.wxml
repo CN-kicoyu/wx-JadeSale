@@ -1,0 +1,132 @@
+<view class="rink-title bgred">
+  <text class="col">状态</text>
+  <text class="col2">竞拍用户</text>
+  <text class="col2">竞拍金额</text>
+  <text class="col3">竞拍时间</text>
+</view>
+<view class="rink-title">
+  <text class="rink-top">领先</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>
+<view class="rink-title">
+  <text class="rink">出局</text>
+  <text class="col2">爱哭的鱼</text>
+  <text class="col2">￥2,200</text>
+  <text class="col3">2017-04-13 23:20:39</text>
+</view>

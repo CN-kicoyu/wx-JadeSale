@@ -1,0 +1,2 @@
+<image class="intro-bg" src="http://oo3thr1aa.bkt.clouddn.com/intro.jpg"></image>
+<view class="intro-btn" catchtap="introToindex"></view>

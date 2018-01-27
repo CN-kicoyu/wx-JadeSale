@@ -1,0 +1,25 @@
+<import src="../../template/score/score.wxml" />
+<view class="order-item">
+  <view class="inbasket-content">
+    <image src="{{appinfo.goods_img}}"></image>
+    <view class="content-info">
+      <text class="info-title">{{appinfo.goods_name}}</text>
+      <text class="info-attr">颜色：褐色；尺码：均码</text>
+      <view class="info-buy">
+        <text>¥{{appinfo.goods_price}}</text>
+        <text>x{{appinfo.goods_number}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="comment-content">
+  <view class="more-comment">
+    <view class="comment-score">
+      <text>商品评价</text>
+      <template is="score" data="{{score:score,checkStar:checkStar}}"></template>
+    </view>
+  </view>
+  <textarea placeholder="亲，写下购物心得可以给其他的小伙伴们提供帮助哦！快来评论吧！" placeholder-style="color:#cccccc" class="comment-area" bindinput="contentInput"/>
+ </view> 
+  
+  <button form-type="submit" type="default" loading="{{isloading}}" hover-class="button-hover" class="btn" bindtap="bindButtonTap" disabled="{{btnDisabled}}" > 发表评价 </button>

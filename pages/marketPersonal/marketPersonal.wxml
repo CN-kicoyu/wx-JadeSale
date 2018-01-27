@@ -1,0 +1,47 @@
+<view class="mperson-avator">
+  <image src="http://oo3thr1aa.bkt.clouddn.com/avator-big.jpg" class="mperson-avator-bg" mode="aspectFill"></image>
+  <view class="mperson-avator-info">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/avator-big.jpg"></image>
+    <text>师姐萌萌哒32</text>
+    <view class="mperson-avator-btn">
+      <text>+ 加关注</text>
+    </view>
+    <view class="mperson-avator-num">
+      <view>
+        <text>3</text>
+        <text>关注</text>
+      </view>
+      <view>
+        <text>2343</text>
+        <text>粉丝</text>
+      </view>
+      <view>
+        <text>37</text>
+        <text>作品</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="mperson-info">
+  <text class="mperson-info-dot" style="margin-left:6rpx">“</text>
+  <text style="padding:0 48rpx;">吉蒂什伊苏吉蒂什伊苏吉蒂什伊苏吉蒂什伊苏吉蒂什伊苏吉蒂吉蒂什伊苏吉蒂什伊苏吉苏吉蒂吉蒂什伊苏吉蒂什伊苏吉蒂什伊苏吉蒂什伊苏吉蒂什伊苏什伊吉蒂什伊苏吉蒂什伊苏苏</text>
+  <text class="mperson-info-dot" style="text-align:right;padding-right:50rpx">”</text>
+</view>
+<view class="mperson-goods">
+  <block wx:for="{{initData}}">
+    <view class="goodcol2" catchtap="onProductDetail">
+      <view class="good-col">
+        <view class="goods-wrap" >
+          <image src="{{item.imgUrl}}" class="good-col-img" />
+        </view>
+        <text class="good-col-txt">{{item.title}}</text>
+        <view class="goods-prices">
+          <view class="good-col-price">
+            <text class="price-current">￥ {{item.price}}.{{item.priceFen}}</text>
+          </view>
+          <text class="good-col-num">购买</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

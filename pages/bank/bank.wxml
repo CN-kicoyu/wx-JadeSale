@@ -1,0 +1,16 @@
+<block  wx:for="{{appinfo}}" wx:if="{{appinfo.length>0}}">
+  <view class="banks zhaoshang">
+    <view class="bank-name">
+      <view><text  class="pull-l">{{item.bank_name}}</text><text class="small">{{item.bank_of_deposit}}</text><text class="pull-r">{{item.bank_user}}</text></view>
+      <text class="num">{{item.bank_card}}</text>
+    </view>
+  </view>
+</block>
+<view class="banks" catchtap="gotoAddBank">
+  <view class="bank-img">
+    <text class="no-img">+</text>
+  </view>
+  <view class="bank-name">
+    <text class="add-card">添加银行卡</text>
+  </view>
+</view>

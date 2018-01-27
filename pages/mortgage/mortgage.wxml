@@ -1,0 +1,33 @@
+<image src="http://ohcaq1mqd.bkt.clouddn.com/bg-q.jpg" class="head" catchtap="gotoMortgageApply"></image>
+<view wx:if="{{appInfo.length===0}}" class="basket-none-wrap">
+    <image src="/images/index/nothing.png" class="basket-none"></image>
+    <text>ㄒoㄒ~~~，没有数据~ </text>
+</view>
+
+<view class="col" wx:for="{{appInfo}}">
+  <text class="title">矿交中心账户：{{item.stock_code}}</text>
+  <view class="content">
+    <text class="tip  blue" wx:if="{{item.status == 0}}">{{item.status_name}}</text>
+    <text class="tip green" wx:if="{{item.status == 1}}">{{item.status_name}}</text>
+    <text class="tip red" wx:if="{{item.status == 2}}">{{item.status_name}}</text>
+    <text class="tip grey" wx:if="{{item.status == 3}}">{{item.status_name}}</text>
+    <text class="tip top yellow" catchtap="bindExchange" data-id="{{item.id}}" wx:if="{{item.status == 1 && item.is_exchange == 0}}">兑换</text>
+    <view>
+      <text class="light">矿交中心申购单号</text>
+      <text>{{item.stock_sn}}</text>
+    </view>
+    <view>
+      <text class="light">矿交中心申购金额</text>
+      <text>￥{{item.amount}}</text>
+    </view>
+    <view>
+      <text class="light">矿交中心申购更新时间</text>
+      <text>{{item.log_time}}</text>
+    </view>
+    <view>
+      <text class="light">抵用券申请时间</text>
+      <text>{{item.add_time}}</text>
+    </view>
+    <text class="light" wx:if="{{item.admin_note}}">备注：{{item.admin_note}}</text>
+  </view>
+</view>

@@ -1,0 +1,90 @@
+<view class="order-fixed">
+  <view class="order-nav">
+      <block wx:for="{{tabNavbar}}">
+      <text class="{{item.actived ? 'actived' : ''}}" catchtap="changeTab" data-change="{{index}}">{{item.title}}
+</text>
+      </block>
+  </view>
+</view>
+
+
+<view class="total" wx:if="{{IsShow == 1}}">
+  <view class="one" style="border-right:1px solid #dedede">
+    <text class="num">{{sumMoney.paycheck[0].sumMoney?sumMoney.paycheck[0].sumMoney:0}}</text>
+    <text>充值申请总额(转账)</text>
+  </view>
+  <view class="one" style="border-right:1px solid #dedede">
+    <text class="num">{{sumMoney.order[0].sumMoney?sumMoney.order[0].sumMoney:0}}</text>
+    <text>订单申请总额(转账)</text>
+  </view>
+</view>
+
+
+<view class="mt" wx:if="{{IsShow == 2 || IsShow == 3}}"></view>
+
+<view wx:if="{{appInfo.length===0 || paycheckList == 0 || refundList == 0}}" class="basket-none-wrap">
+    <image src="/images/index/nothing.png" class="basket-none"></image>
+    <text>ㄒoㄒ~~~，没有单据~ </text>
+</view>
+
+<block wx:for="{{appInfo}}" wx:if="{{IsShow == 1}}">
+  <view class="exchange-list">
+    <view class="exchange-list-item {{item.type == 0?'return':''}}">
+        <text class="circle" wx:if="{{item.type == 1}}">充</text>
+        <text class="circle" wx:if="{{item.type == 0}}">订</text>
+        <view>
+          <text class="exchange-txt">申请单号：{{item.order_sn}}</text>
+          <text class="exchange-item-time">{{item.add_time}}</text>
+        </view>
+        <view class="exchange-item-right">
+          <text class="wait" wx:if="{{item.status == 0}}">{{item.amount}}</text>
+          <text class="yes" wx:if="{{item.status == 1}}">{{item.amount}}</text>
+          <text class="ccc" wx:if="{{item.status == 2}}">{{item.amount}}</text>
+          <text class="wrong" wx:if="{{item.status == 3}}">{{item.amount}}</text>
+          <text class="exchange-item-time">{{item.status_name}}</text>
+        </view>
+    </view>
+    <text class="exchange-item-text" wx:if="{{item.status == 2}}">说明：{{item.admin_note}}</text>
+  </view>
+</block>
+
+<block wx:for="{{paycheckList}}" wx:if="{{IsShow == 2}}">
+  <view class="exchange-list">
+    <view class="exchange-list-item {{item.type == 0?'return':''}}">
+        <text class="circle">充</text>
+        <view>
+          <text class="exchange-txt">申请单号：{{item.order_sn}}</text>
+          <text class="exchange-item-time">{{item.add_time}}</text>
+        </view>
+        <view class="exchange-item-right">
+          <text class="wait" wx:if="{{item.status == 0}}">{{item.amount}}</text>
+          <text class="yes" wx:if="{{item.status == 1}}">{{item.amount}}</text>
+          <text class="ccc" wx:if="{{item.status == 2}}">{{item.amount}}</text>
+          <text class="wrong" wx:if="{{item.status == 3}}">{{item.amount}}</text>
+          <text class="exchange-item-time">{{item.status_name}}</text>
+        </view>
+    </view>
+    <text class="exchange-item-text" wx:if="{{item.status == 2}}">说明：{{item.user_note}}</text>
+  </view>
+</block>
+
+<block wx:for="{{refundList}}" wx:if="{{IsShow == 3}}">
+  <view class="exchange-list">
+    <view class="exchange-list-item {{item.type == 0?'return':''}}">
+        <view>
+          <text class="exchange-txt">申请单号：{{item.order_sn}}</text>
+          <text class="exchange-item-time">{{item.add_time}}</text>
+          <text class="exchange-item-time">退款账号：{{item.transfer_code}}</text>
+          <text class="exchange-item-time">说明：{{item.content}}</text>
+        </view>
+        <view class="exchange-item-right">
+          <text class="wait" wx:if="{{item.status == 0}}">{{item.amount}}</text>
+          <text class="yes" wx:if="{{item.status == 1}}">{{item.amount}}</text>
+          <text class="ccc" wx:if="{{item.status == 2}}">{{item.amount}}</text>
+          <text class="wrong" wx:if="{{item.status == 3}}">{{item.amount}}</text>
+          <text class="exchange-item-time">{{item.status_name}}</text>
+        </view>
+    </view>
+    <view class="exchange-item-img" wx:if="{{item.status == 1}}"><image src="{{item.images}}"></image></view>
+  </view>
+</block>

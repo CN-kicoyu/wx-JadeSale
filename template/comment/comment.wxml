@@ -1,0 +1,13 @@
+<template name="comment">
+  <view class="comment">
+    <view>
+      <image class="comment-avatar" src="{{avatar}}"></image>
+      <text class="comment-name">{{username}}</text>
+      <image class="comment-member" src="/images/icon/vip.png"></image>
+    </view>
+    <view class="comment-txt">
+      <text>{{content}}</text>
+    </view>
+    <text class="comment-date">{{add_time}}</text>
+  </view>
+</template>

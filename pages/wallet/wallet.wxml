@@ -1,0 +1,31 @@
+<import src="../../template/walletDetail/walletDetail.wxml" />
+<scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+  <block wx:for="{{walletList}}">
+    <text class="items {{item.actived ? 'active' : ''}}" catchtap="changeTab" data-id="{{item.type}}" data-change="{{index}}">{{item.type_name}}</text>
+  </block>
+</scroll-view>
+<view class="card">
+  <view class="contents">
+    <view class="op1"></view>
+    <view class="op2"></view>
+    <view class="bar-num">
+      <image src="/images/icon/interface.png" class="nums"></image>
+      <view class="texts">
+      <text>{{coinName}}</text>
+      <text  class="prices">{{money}}</text>
+      </view>
+    </view>
+    
+    <view class="btn-wrap">
+      <text class="btn" wx:if="{{coinId == 1 || coinId == 3 || coinId == 4}}" data-id="{{coinId}}" catchtap="gotoRecharge">充值</text> 
+      <text class="btn m-l" wx:if="{{coinId == 4}}" data-id="{{coinId}}" catchtap="gotoExchange">兑换</text> 
+    </view>
+  </view>
+</view>
+
+<view class="list">
+  <text class="title">交易明细</text>
+  <block wx:for="{{appInfo}}">
+    <template is="walletList" data="{{...item}}"></template>
+  </block>
+</view>

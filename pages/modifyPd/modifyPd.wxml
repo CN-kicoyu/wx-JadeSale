@@ -1,0 +1,13 @@
+<view class="inputlist">
+  <text>原密码：</text>
+  <input type="number" value="{{addressList.mobile}}" maxlength="11" class="input" bindinput="mobileInput"/>
+</view>
+<view class="inputlist">
+  <text>修改密码：</text>
+  <input type="number" value="{{addressList.mobile}}" maxlength="11" class="input" bindinput="mobileInput"/>
+</view>
+<view class="inputlist">
+  <text>确认修改密码：</text>
+  <input type="number" value="{{addressList.mobile}}" maxlength="11" class="input" bindinput="mobileInput"/>
+</view>
+<button form-type="submit" type="default" loading="{{isloading}}" hover-class="button-hover" class="btn" bindtap="bindButtonTap" disabled="{{btnDisabled}}" > 立即修改 </button>

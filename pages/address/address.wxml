@@ -1,0 +1,28 @@
+<view>
+  <block wx:for="{{addressList}}">
+    <view class="list">
+      <view class="name-list">
+        <text>{{item.consignee}}</text>
+        <text>{{item.mobile}}</text>
+      </view>
+      <text class="where">{{item.countryName}}{{item.provinceName}}{{item.cityName}}{{item.districtName}}{{item.address}}</text>
+      <view class="control">
+        <view style="display:flex;" data-index="{{index}}" catchtap="checkPay">
+          <icon type="{{item.default ? 'success' : 'circle'}}" size="14" class="check-btn" style="{{item.default ? 'color:#f15352' : 'color:#cccccc'}}" />
+          <text>设为默认</text>
+        </view>
+        <view class="btns">
+          <view class="btn"  data-index="{{index}}" catchtap="checkEdit">
+            <image src="/images/icon/address-01.png" />
+            <text>编辑</text>
+          </view>
+          <view class="btn" data-index="{{index}}" catchtap="checkDel">
+            <image src="/images/icon/address-02.png" />
+            <text>删除</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="cdetail-btn" catchtap="gotoAddressAdd">+ 新建地址</view>

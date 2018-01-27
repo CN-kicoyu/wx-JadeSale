@@ -1,0 +1,188 @@
+<import src="../../template/maskAlert/maskAlert.wxml" />
+<view class="display-head">
+  <image src="http://oo3thr1aa.bkt.clouddn.com/detail-5-01.jpg" class="detail-banner" catchtap="imgScale" />
+  <view class="display-head-title">
+    <view>
+      <text class="detail-title">高冰种翡翠吊坠</text>
+      <text class="detail-label">热拍中</text>
+    </view>
+    <view class="detail-time">
+      <image src="/images/icon/appointment2.png"></image>
+      <text>还剩1天03:49:57结束</text>
+    </view>
+  </view>
+</view>
+<view class="display-info">
+  <text>起拍价：￥100</text>
+  <text>加价幅度：￥100</text>
+  <text>围观人数：2014</text>
+</view>
+<view class="display-bid">
+  <view class="display-lot">
+    <text>
+      <text style="color:#999;">出价记录：</text>
+      <text style="color:#ff2a07;">98</text>次出价</text>
+    <image src="/images/icon/arrow-right.png" catchtap="onBidRink"></image>
+  </view>
+  <scroll-view scroll-x="true" class="detail-scroll" scroll-left="{{0}}">
+    <view class="detail-rink" >
+      <view class="rink-top active">领先</view>
+      <text class="detail-price">￥3823.00</text>
+      <text>爱哭的与啊啊</text>
+    </view>
+    <view class="detail-rink" catchtap="onBidRink">
+      <view class="rink-top">出局</view>
+      <text class="detail-price">￥3823.00</text>
+      <text>爱哭的与啊啊</text>
+    </view>
+    <view class="detail-rink" catchtap="onBidRink">
+      <view class="rink-top">出局</view>
+      <text class="detail-price">￥3823.00</text>
+      <text>爱哭的与啊啊</text>
+    </view>
+    <view class="detail-rink" catchtap="onBidRink">
+      <view class="rink-top">出局</view>
+      <text class="detail-price">￥3823.00</text>
+      <text>爱哭的与啊啊</text>
+    </view>
+    <view class="detail-rink" catchtap="onBidRink">
+      <view class="rink-top">出局</view>
+      <text class="detail-price">￥3823.00</text>
+      <text>爱哭的与啊啊</text>
+    </view>
+  </scroll-view>
+</view>
+<view class="detail-display">
+  <view class="display-nav">
+    <block wx:for="{{tabNav}}">
+      <view class="{{item.actived ? 'actived' : ''}}" catchtap="changePosition" data-change="{{index}}">
+        <text>{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="display-contain">
+    <scroll-view scroll-x="{{allowMove}}" class="display-scroll" scroll-with-animation="true" scroll-left="{{scrollLeft}}">
+      <view class="scroll-view-item display-good">
+        <image src="http://oo3thr1aa.bkt.clouddn.com/detail-1-05.jpg" mode="widthFix" bindload="giveWidth"></image>
+      </view>
+      <view class="scroll-view-item display-more">
+        <view class="more-title">
+          <image src="/images/icon/detail-05.png"></image>
+          <text>竞拍细则</text>
+        </view>
+        <view class="more-know">
+          <view class="more-know-item">
+            <view>
+              <text class="light">起拍价：</text>
+              <text>￥100.00</text>
+            </view>
+            <view>
+              <text class="light">保证金：</text>
+              <text>￥100.00</text>
+            </view>
+          </view>
+          <view class="more-know-item">
+            <view>
+              <text class="light">加价幅度：</text>
+              <text>￥100.00</text>
+            </view>
+            <view>
+              <text class="light">拍卖佣金：</text>
+              <text>￥100.00</text>
+            </view>
+          </view>
+          <view class="more-know-item">
+            <view>
+              <text class="light">保留价：</text>
+              <text>无</text>
+            </view>
+            <view>
+              <text class="light">延时周期：</text>
+              <text>10分钟</text>
+            </view>
+          </view>
+
+        </view>
+        <view class="more-title">
+          <image src="/images/icon/detail-01.png"></image>
+          <text>产品规格</text>
+        </view>
+        <view class="more-contain">
+          <view>
+            <text class="light">品种</text>
+            <text>通天玉</text>
+          </view>
+          <view>
+            <text class="light">品牌</text>
+            <text>通天玉-灵韵</text>
+          </view>
+          <view>
+            <text class="light">产地</text>
+            <text>湖南通天山</text>
+          </view>
+          <view>
+            <text class="light">商品形态</text>
+            <text>挂坠</text>
+          </view>
+          <view>
+            <text class="light">鉴定标识</text>
+            <text>国内鉴定</text>
+          </view>
+          <view>
+            <text class="light">鉴定类别</text>
+            <text>新疆产品质量监督检验研究院</text>
+          </view>
+          <view>
+            <text class="light">认证标识</text>
+            <text>CMA和CNAS/CNAL</text>
+          </view>
+        </view>
+        <view class="more-title">
+          <image src="/images/icon/detail-02.png"></image>
+          <text>设计理念</text>
+        </view>
+        <view class="more-design">
+          <view>
+            <text class="more-text">每一种玉石都有自己的独特表相和内质,需要制作人员根据每块材料的特征,加以巧妙设计构思。设计构思要因料而异,既不能修饰太设计构思要因料而异,既不能修饰太过,也不能不加修饰,否则便不能更设计构思要因料而异,既不能修饰太设计构思要因料而异,既不能修饰设计构思要因料而异,既不能修饰太太好...</text>
+          </view>
+          <view class="more-open">
+            <text>查看更多</text>
+            <image src="/images/icon/arrow-down.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="scroll-view-item display-more">
+        <view class="more-title">
+          <image src="/images/icon/detail-05.png"></image>
+          <text>竞拍规则</text>
+        </view>
+        <view class="text-lists">
+          <text>每一种玉石都有自己的独特表相和内质,需要制作人员根据每块材料的特征,加以巧妙设计构思。设计构思要因料而异,既不能修饰太设计构思要因料而异,既不能修饰太过,也不能不加修饰,否则便不能更设计构思要因料而异,既不能修饰太设计构思要因料而异,既不能修饰设计构思要因料而异,既不能修饰太太好...</text>
+          <text>1.真伪：上拍机构的企业祥相关资质都已审核，上拍机构的企业祥相关资质都已审核，上拍机构的企业祥相关资质都已审核，上拍机上拍机构的企业祥相关资质都已审核，构的企业祥相关资质都已审上拍机构的企业祥相关资质都已审核，上拍机构的企业祥相关资质都已审核。</text>
+          <text>1.真伪：上拍机构的企业祥相关资质都已审核，上拍机构的企业祥相关资质都已审核，上拍机构的企业祥相关资质都已审核，上拍机上拍机构的企业祥相关资质都已审核，构的企业祥相关资质都已审上拍机构的企业祥相关资质都已审核，上拍机构的企业祥相关资质都已审核。</text>
+          <text>1.真伪：上拍机构的企业祥相关资质都已审核，上拍机构的企业祥相关资质都已审核，上拍机构的企业祥相关资质都已审核，上拍机上拍机构的企业祥相关资质都已审核，构的企业祥相关资质都已审上拍机构的企业祥相关资质都已审核，上拍机构的企业祥相关资质都已审核。</text>
+          <text>1.真伪：上拍机构的企业祥相关资质都已审核，上拍机构的企业祥相关资质都已审核，上拍机构的企业祥相关资质都已审核，上拍机上拍机构的企业祥相关资质都已审核，构的企业祥相关资质都已审上拍机构的企业祥相关资质都已审核，上拍机构的企业祥相关资质都已审核。</text>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="display-mask" style="{{'height:'+scrollHeight+ 'rpx;'}}" bindtouchstart="cancleScroll" catchtouchend="openScroll"></view>
+  </view>
+</view>
+<view class="detail-fixed">
+  <view class="detail-fixed-icon">
+    <contact-button type="default-light" size="20" session-from="weapp" class="sevice">
+    </contact-button>
+    <text>咨询</text>
+  </view>
+  <view class="detail-fixed-icon" catchtap="onMask" data-type="remind">
+    <image src="/images/icon/remind-ons.png"></image>
+    <text>设置提醒</text>
+  </view>
+  <view class="detail-fixed-text" catchtap="goToBasket">
+    <text>保证金：￥100.00</text>
+  </view>
+  <view class="detail-fixed-buy" catchtap="onMask" data-type="bid">
+    <text>参拍</text>
+  </view>
+</view>
+<template is="maskAlert" wx:if="{{maskbox}}" data="{{type}}"></template>

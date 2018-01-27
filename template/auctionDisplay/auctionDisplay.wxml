@@ -1,0 +1,27 @@
+<template name="auctionDisplay">
+    <view class="adisplay-wrap" catchtap="onDisplayDetail" data-id="{{displayID}}">
+        <image src="{{surface}}"></image>
+        <view class="adisplay-info">
+            <view class="adisplay-info-wrap">
+                <text>专场倒计时</text>
+                <view class="adisplay-info-hr"></view>
+                <view class="adisplay-info-time">
+                    <text class="adisplay-info-time-num">03</text>
+                    <text class="adisplay-info-time-dot">:</text>
+                    <text class="adisplay-info-time-num">03</text>
+                    <text class="adisplay-info-time-dot">:</text>
+                    <text class="adisplay-info-time-num">03</text>
+                </view>
+                <text>{{title}}</text>
+            </view>
+        </view>
+    </view>
+    <scroll-view class="adisplay-goods" scroll-x="{{true}}" scroll-left="{{0}}" scroll-with-animation="{{true}}">
+    <block wx:for="{{subGoods}}" >
+        <view class="adisplay-goods-img" catchtap="onAuctionDetail">
+            <image src="{{item.imgURL}}" mode="{{aspectFit}}"></image>
+            <view class="adisplay-goods-mask">￥{{item.price}}.00</view>
+        </view>
+    </block>
+    </scroll-view>
+</template>

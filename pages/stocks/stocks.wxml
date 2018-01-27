@@ -1,0 +1,124 @@
+<view class="stocks-head">
+  <image src="/images/stocks/stocks-1.jpg" class="head-banner"></image>
+  <view class="stocks-score">
+    <image src="/images/stocks/stocks-2.png"></image>
+    <text>
+      您目前的玉豆：<text class="score">8900</text>
+    </text>
+  </view>
+  <view class="stocks-time">
+    <image src="/images/stocks/stocks-3.png"></image>
+    <text>距离本轮竞猜结束：</text>
+    <text class="time-play">00：20：29</text>
+  </view>
+  <view style="position:relative;">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/icon-pk.png" class="pk"></image>
+    <view class="block-box">
+        <text  class="block-text">距离开放还有11个小时</text>
+    </view>
+  
+  </view>
+  <view class="head-btn" catchtap="gotoRecord">
+  <text>投注记录</text>
+  </view>
+  <view class="head-btn" catchtap="gotoRecharge" style="top:120rpx">
+  <text>玉豆充值</text>
+  </view>
+</view>
+<view class="stocks-form">
+<view class="form-bg-top"></view>
+  <view class="form-bg">
+    
+     <view class="form-choose">
+      <view catchtap="onGuess" data-num="1" class="{{isGuess == 1 ? 'active' : ''}}">
+        <text>猜1位位数</text>
+      </view>
+      <view class="{{isGuess == 2 ? 'active' : ''}}" data-num="2" catchtap="onGuess">
+        <text>猜2位位数</text>
+      </view>
+      </view>
+    <view class="form-content">
+    <view class="form-input">
+      <text>个位数</text>
+      <input type="number" value="" maxlength="1"/>
+    </view>
+    <view class="form-input" wx:if="{{isGuess == 2}}">
+      <text>十位数</text>
+      <input type="number" value="" maxlength="1"/>
+    </view>
+    <view class="form-input">
+      <text>投注积分</text>
+      <input type="number" value="" maxlength="4"/>
+      <text class="form-input-px">积分</text>
+    </view>
+    <text style="margin:30rpx 0;display:block;">* 本次您最多可投 1000 积分</text>
+    </view>
+    <image src="/images/stocks/stocks-4.png" class="form-btn"></image>
+    
+  </view>
+</view>
+<view class="form-info-hr"></view>
+<view class="form-info-content">
+  <view class="info-wrap">
+    <view class="info-title">
+      <view class="info-title-circle"></view>
+      <view class="info-title-font">
+        <text>活动说明</text>
+      </view>
+      <view class="info-title-circle"></view>
+    </view>
+    <view class="info-contain">
+      <text>1. 猜当日上证综指取收盘时小数最后一位或 后两位.指数以证交所发布数字为准.
+      </text>
+      <text>2. 如猜中收盘时小数部分的后一位,则获得 20倍积分奖励,猜中后两位则获得50倍积 分奖励.所有奖励均在第二天凌晨2点发放
+      </text>
+      <text>3. 投注时间为当天9:30 - 14:30</text>
+    </view>
+  </view>
+  <view class="info-wrap">
+    <view class="info-title">
+      <view class="info-title-circle"></view>
+      <view class="info-title-font">
+        <text>中奖播报</text>
+      </view>
+      <view class="info-title-circle"></view>
+    </view>
+    <view class="info-total">
+    <view class="info-col">
+      <text>幸福的小猪</text>
+      <text>猜中后一位</text>
+      <text>20000积分</text>
+    </view>
+    <view class="info-col">
+      <text>幸福的小猪</text>
+      <text>猜中后一位</text>
+      <text>20000积分</text>
+    </view>
+    <view class="info-col">
+      <text>幸福的小猪</text>
+      <text>猜中后一位</text>
+      <text>20000积分</text>
+    </view>
+    <view class="info-col">
+      <text>幸福的小猪</text>
+      <text>猜中后一位</text>
+      <text>20000积分</text>
+    </view>
+    <view class="info-col">
+      <text>幸福的小猪</text>
+      <text>猜中后一位</text>
+      <text>20000积分</text>
+    </view>
+    <view class="info-col">
+      <text>幸福的小猪</text>
+      <text>猜中后一位</text>
+      <text>20000积分</text>
+    </view>
+    <view class="info-col">
+      <text>幸福的小猪</text>
+      <text>猜中后一位</text>
+      <text>20000积分</text>
+    </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,44 @@
+<import src="/template/pay/pay.wxml" />
+<view class="order-fixed" wx:if="{{!isPayShow}}">
+    <view class="order-nav">
+      <block wx:for="{{tabNavbar}}">
+        <text class="{{item.actived ? 'actived' : ''}}" catchtap="changeTab" data-id="{{item.id}}" data-change="{{index}}">{{item.package_name}}</text>
+      </block>
+    </view>
+  </view>
+  <view class="nav-contain">
+  <view wx:if="{{!isPayShow}}">
+    <view class="display-head">
+      <image src="/images/auction-bid-1.jpg"></image>
+      <view class="display-head-title">
+        <text>{{dataType.type_name}}</text>
+      </view>
+    </view>
+    <view class="display-info">
+      <text>通天珠宝</text>
+      <text>商品数量：{{num}}件</text>
+      <text>已购买人数：{{total}}</text>
+    </view>
+    <view class="display-lists">
+      <block wx:for="{{packgoodslist}}">
+        <view class="inbasket-content">
+          <image src="{{item.goods_img}}"></image>
+          <view class="content-info">
+            <text class="info-title">{{item.goods_name}}</text>
+            <view class="info-buy">
+              <text class="info-buy-price">数量：{{item.package_number}}
+              </text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class="cdetail-btn" catchtap="changeShow">立即支付</view>
+  </view>
+  <view wx:else>
+    <template is="pay" data="{{isAddressShow:isAddressShow,dataHeight:dataHeight,isShow:isShow,orderConfirm:orderConfirm}}"></template>
+    <view class="cdetail-btn" catchtap="gotoPay">确认支付</view>
+  </view>
+</view>
+
+

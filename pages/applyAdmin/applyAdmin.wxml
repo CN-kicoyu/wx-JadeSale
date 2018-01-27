@@ -1,0 +1,10 @@
+<view class="wrap">
+  <text class="title">请选择您需要购买的消费套餐</text>
+  <text class="hr"></text>
+</view>
+<block wx:for="{{data}}" wx:key="unique">
+  <view data-id="{{item.type_id}}"  class="wrap white" catchtap="gotoPackage">
+    <image src="{{item.thumb}}"></image>
+    <text >{{item.type_name}}</text>
+  </view >
+</block>

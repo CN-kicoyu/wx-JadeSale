@@ -1,0 +1,143 @@
+@import "/template/changeCol2/changeCol2.wxss";
+
+.changebuy-header {
+  background: #ef545c;
+  padding: 30rpx 0 20rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.changebuy-header > image {
+  border-radius: 50%;
+  border: 5rpx solid #fff;
+  width: 125rpx;
+  height: 125rpx;
+  margin-left:70rpx;
+
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left:30rpx;
+padding-top:7rpx;
+
+
+}
+
+.header-user {
+  width:30rpx;
+height:30rpx;
+vertical-align:middle;
+margin-left:10rpx;
+
+}
+
+.header-tip {
+  display: block;
+  font-size: 20rpx;
+  margin:8rpx 0;
+
+}
+
+.header-money {
+  font-size:30rpx;
+
+  font-weight: bold;
+}
+
+.header-money > image {
+  width: 45rpx;
+  height: 26rpx;
+  margin-right:12rpx;
+
+}
+
+.header-change {
+  font-size: 20rpx;
+  position: absolute;
+ bottom:32rpx;
+right:46rpx;
+
+  display: block;
+  border-radius: 50px;
+  padding: 10rpx 30rpx;
+  background: #ffcf55;
+  color:white;
+}
+.exchange-goods {
+    overflow:hidden;
+    padding-bottom:30rpx;
+    background:white;
+}
+.changebuy-banner {
+  background: white;
+  padding: 6rpx;
+  margin-bottom: 20rpx;
+}
+.changebuy-banner > image {
+    width:100%;
+    height:292rpx;
+}
+.index-intro {
+  margin-top: 20rpx;
+  background: white;
+  padding-bottom: 20rpx;
+}
+
+.index-intro-title {
+  display: flex;
+  font-size: 26rpx;
+  align-items: center;
+  padding: 20rpx 0;
+}
+
+.half-hr {
+  flex: 1;
+}
+
+.half-hr > text {
+  display: block;
+  height: 1px;
+  background: #ccc;
+  width: 120rpx;
+}
+
+.half-hr > text.right {
+  float: right;
+  margin-right: 20rpx;
+}
+
+.half-hr > text.left {
+  float: left;
+  margin-left: 20rpx;
+}
+
+.order-fixed {
+  width:100%;
+}
+.order-nav {
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: white;
+  margin-bottom: 20rpx;
+  border-bottom:1px solid #dedede;
+}
+
+.order-nav > text {
+  display: block;
+  color: #999;
+  font-size: 26rpx;
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.order-nav > text.actived {
+  border-bottom: 2px solid #ffcf55;
+  color: #ffcf55;
+  font-weight: bold;
+}

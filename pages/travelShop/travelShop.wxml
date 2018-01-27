@@ -1,0 +1,136 @@
+<import src="../../template/score/score.wxml" />
+<import src="../../template/comment/comment.wxml" />
+<view class="product-detail">
+  <image src="http://oo3thr1aa.bkt.clouddn.com/travel-img-10.jpg" class="detail-banner" catchtap="imgScale" />
+  <view class="detail-scale" catchtap="imgScale">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/travel-img-6.jpg"></image>
+    <image src="http://oo3thr1aa.bkt.clouddn.com/travel-img-7.jpg"></image>
+    <image src="http://oo3thr1aa.bkt.clouddn.com/travel-img-8.jpg"></image>
+  </view>
+  <view class="detail-title">
+    <text>通天精美纯色马尔代夫6日游</text>
+  </view>
+  <view class="good-col-price">
+   <view>
+    <text class="price-current">￥ 7899.00</text>
+    <text class="price-old">￥ 9899.00
+      <text class="text-del"></text>
+    </text>
+    </view>
+    <text class="price-attr" catchtap="onTravelList">查看路线</text>
+  </view>
+  <view class="detail-safe">
+    <view class="detail-safe-item">
+      <image src="/images/icon/circle.png"></image>
+      <text>正品保证</text>
+    </view>
+    <view class="detail-safe-item">
+      <image src="/images/icon/circle.png"></image>
+      <text>支持无理由退货</text>
+    </view>
+    <view class="detail-safe-item">
+      <image src="/images/icon/circle.png"></image>
+      <text>线下门店</text>
+    </view>
+    <view class="detail-safe-item">
+      <image src="/images/icon/circle.png"></image>
+      <text>热销推荐</text>
+    </view>
+  </view>
+</view>
+<view class="detail-display">
+  <view class="display-nav">
+    <block wx:for="{{tabNav}}">
+      <view class="{{item.actived ? 'actived' : ''}}" catchtap="changePosition" data-change="{{index}}">
+        <text>{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="display-contain">
+    <scroll-view scroll-x="{{allowMove}}" class="display-scroll" scroll-with-animation="true" scroll-left="{{scrollLeft}}">
+      <view class="scroll-view-item display-good">
+        <image src="http://oo3thr1aa.bkt.clouddn.com/travel-img-7.jpg" mode="widthFix" bindload="giveWidth"></image>
+      </view>
+      <view class="scroll-view-item display-more">
+        <view class="more-title">
+          <image src="/images/icon/detail-01.png"></image>
+          <text>产品规格</text>
+        </view>
+        <view class="more-contain">
+          <view>
+            <text class="light">最佳季节</text>
+            <text>四季皆宜</text>
+          </view>
+          <view>
+            <text class="light">建议游玩</text>
+            <text>7天</text>
+          </view>
+          <view>
+            <text class="light">人均花费</text>
+            <text>¥30000</text>
+          </view>
+          <view>
+            <text class="light">签证难度</text>
+            <text>易</text>
+          </view>
+          <view>
+            <text class="light">适合人群</text>
+            <text>情侣，度假休闲</text>
+          </view>
+        </view>
+        <view class="more-title">
+          <image src="/images/icon/detail-02.png"></image>
+          <text>推荐理由</text>
+        </view>
+        <view class="more-design">
+          <view>
+            <text class="more-text">马尔代夫位于赤道线上，属热带海洋性气候，受季风影响，四季温暖，湿度较大。但是马尔代夫日夜温差不大，基本上全年适合观光旅游。 月到9月是雨季，比较闷热，常有阵雨。从10月底一直到圣诞节是马尔代夫的旅游旺季。不过游客应避开圣诞节高峰，这时游人如织，订房困难且房价贵。 马尔代夫的月降雨量变化很大。一月至四月较干燥，其中二月尤甚，而五月和十月则为月平均降雨量最大的月份。从五月至九月是斥着西南季风的湿润季节。此时常可见到风大浪急的海面和狂风大作的景象。 </text>
+          </view>
+          <view class="more-open">
+            <text>查看更多</text>
+            <image src="/images/icon/arrow-down.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="scroll-view-item" style="margin-bottom:80rpx;">
+        <view class="more-comment">
+          <view class="comment-score">
+            <text>整体评价</text>
+            <template is="score"></template>
+          </view>
+        </view>
+        <view class="comment-list">
+          <block wx:for="{{}}">
+            <template is="comment"></template>
+          </block>
+          <template is="comment"></template>
+          <template is="comment"></template>
+        </view>
+        <view class="comment-list">
+          <block wx:for="{{}}">
+            <template is="comment"></template>
+          </block>
+          <template is="comment"></template>
+          <template is="comment"></template>
+        </view>
+        <view class="read-more">
+          <text>查看更多</text>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="display-mask" style="{{'height:'+scrollHeight+ 'rpx;'}}" bindtouchstart="cancleScroll" catchtouchend="openScroll"></view>
+  </view>
+</view>
+<view class="detail-fixed">
+  <view class="detail-fixed-icon">
+    <!--<image src="/images/icon/detail-03.png"></image>-->
+    <contact-button type="default-light" size="20" session-from="weapp" class="sevice">
+    </contact-button>
+  </view>
+  <view class="detail-fixed-icon" catchtap="goToBasket">
+    <image src="/images/icon/detail-04.png"></image>
+  </view>
+  <view class="detail-fixed-buy">
+    <text>立即购买</text>
+  </view>
+</view>

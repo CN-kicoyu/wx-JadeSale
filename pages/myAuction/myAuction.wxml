@@ -1,0 +1,25 @@
+<view class="head">
+  <text class="num">489.00<text style="font-weight:normal;font-size:24rpx"> 兑币</text></text>
+  <text>已冻结保证金</text>
+</view>
+<text class="title">只显示最近三笔拍卖数据</text>
+  <block wx:for="{{displayTmp.subGoods}}">
+<view class="display-items">
+  <text class="dot"></text>
+  <text class="time">2017-03-23 99:23:23</text>
+  <view class="inbasket-content" catchtap="onAuctionDetail">
+      <image src="{{item.imgURL}}"></image>
+      <view class="content-info">
+        <text class="info-title">{{item.title}}</text>
+        <view class="info-remind">
+          <text class="info-attr">匠人：{{item.autor}}</text>
+        </view>
+        <view class="info-buy">
+          <text class="info-buy-price blue">正在进行中
+          </text>
+          <text class="price-num">已冻结：￥980.00</text>
+        </view>
+      </view>
+    </view>
+</view>
+</block>

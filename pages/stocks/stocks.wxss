@@ -1,0 +1,276 @@
+.stocks-head {
+  background: #8b30a7;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head-banner {
+  width: 100%;
+  height: 300rpx;
+  display: block;
+}
+
+.head-btn {
+  position: absolute;
+  top: 30rpx;
+  right: 20rpx;
+  color: white;
+  padding: 15rpx 20rpx;
+  background: #ac4cc6;
+  border-radius: 50px;
+}
+
+.stocks-score {
+  position: relative;
+  top: -20rpx;
+}
+
+.stocks-score > image {
+  width: 418rpx;
+  height: 126rpx;
+}
+
+.stocks-score > text {
+  position: absolute;
+  text-align: right;
+  right: 35rpx;
+  top: 10rpx;
+  color: white;
+}
+
+.stocks-score > text .score {
+  font-size: 36rpx;
+  color: #fffc00;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 53rpx;
+  margin-left: 10rpx;
+}
+
+.stocks-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.stocks-time > image {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 20rpx;
+}
+
+.stocks-time > text {
+  color: #e9e654;
+}
+
+.stocks-time > text.time-play {
+  font-size: 30rpx;
+  font-weight: bolder;
+  color: #fcff00;
+}
+
+.stocks-form {
+  background: #6b0199;
+  padding: 20rpx 10rpx 0;
+}
+
+.form-bg {
+  margin: 0 20rpx;
+  background: #ffcf07;
+  position: relative;
+  padding: 30rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -10rpx;
+}
+
+.form-bg-top {
+  width: 100%;
+  height: 25rpx;
+  background: #010800;
+  border-radius: 50px;
+}
+
+.form-choose {
+  width: 480rpx;
+  margin: 0 auto;
+  background: #603c30;
+  color: #fad301;
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+}
+
+.form-choose > view {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 0;
+  font-size: 26rpx;
+}
+
+.form-choose > view.active {
+  width: 50%;
+  background: #ef5b03;
+  border-radius: 50px;
+}
+
+.form-content {
+  width: 435rpx;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25rpx;
+  align-items: center;
+}
+
+.form-input>text {
+  display: block;
+  width: 115rpx;
+  text-align: left;
+  color: #603c30;
+  font-size: 26rpx;
+}
+
+.form-input>text.form-input-px {
+  width: 60rpx;
+  margin-left: 20rpx;
+}
+
+.form-input>input {
+  width: 180rpx;
+  background: #f68d05;
+  color: #fdee00;
+  font-size: 30rpx;
+  font-weight: bolder;
+  padding: 5rpx 30rpx;
+  border-radius: 50px;
+}
+
+.form-btn {
+  width: 206rpx;
+  height: 56rpx;
+  margin: 8rpx 0;
+  display: block;
+}
+
+.form-info-hr {
+  height: 15rpx;
+  width: 100%;
+  background: #b56cc2;
+}
+
+.form-info-content {
+  background: #8b529a;
+  padding: 0 30rpx;
+}
+
+.info-title {
+  background: #f3625c;
+  border-radius: 50px;
+  height: 88rpx;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info-title-circle {
+  display: block;
+  border-radius: 100%;
+  width: 38rpx;
+  height: 38rpx;
+  background: #ffe7b3;
+  margin: 0 20rpx;
+}
+
+.info-wrap {
+  padding-top: 50rpx;
+}
+
+.info-title-font {
+  height: 60rpx;
+  color: white;
+  text-align: center;
+  font-size: 26rpx;
+  background: #cf534e;
+  display: block;
+  width: 550rpx;
+  line-height: 60rpx;
+  border-radius: 50px;
+}
+
+.info-contain, .info-col {
+  width: 540rpx;
+  margin: 0 auto;
+  color: white;
+  background: #a275ae;
+  padding: 0 30rpx;
+}
+
+.info-contain {
+  padding: 40rpx 30rpx 10rpx;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.info-contain > text {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 26rpx;
+}
+
+.info-col {
+  display: flex;
+  text-align: center;
+  line-height: 70rpx;
+}
+
+.info-col > text {
+  flex: 1;
+  display: block;
+  height: 70rpx;
+}
+
+.info-col:nth-child(2n+1) {
+  background: #9c6bad;
+}
+
+.info-col:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.info-total {
+  padding-bottom: 50rpx;
+}
+
+.pk {
+  margin-top:-20rpx;
+  width:600rpx;
+  height:90rpx;
+  margin:0 auto;
+  display: block;
+}
+.block-box {
+  width:700rpx;
+  height:300rpx;
+  border-radius:40rpx;
+  background:#37013b;
+  border:8rpx solid #62057e;
+  margin-bottom:30rpx;
+}
+.block-text {
+  color:#71158d;
+  display: block;
+  width:100%;
+  text-align:center;
+  margin-top:100rpx;
+  font-size:30rpx;
+}

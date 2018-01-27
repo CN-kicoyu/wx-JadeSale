@@ -1,0 +1,103 @@
+@import "../../template/goodOrder/goodOrder.wxss";
+.region-list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height:48rpx;
+}
+.items {
+  margin-bottom:20rpx;
+}
+.content {
+  background: #fffefd;
+}
+.inputlist {
+  border-bottom:1px solid #dedede;
+  padding: 25rpx 30rpx;
+  background:white;
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.inputlist text {
+  color:#dedede;
+  margin-right:30rpx;
+}
+.inputlist .input {
+  font-family:"PingFang SC","Helvetica Neue","Microsoft Yahei",STHeiti,Tahoma,Simsun,Arial,sans-serif;
+  font-size: 26rpx;
+}
+.rows {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
+.menu-arrow {
+  width: 12rpx;
+  height: 26rpx;
+}
+.reason {
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+.pic {
+  width: 150rpx;
+  height: 150rpx;
+  text-align: center;
+  margin-top:20rpx;
+  font-size:20rpx;
+}
+.imgup {
+  border:1px dashed #dedede;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.imgup > text {
+  padding:0;
+  margin:0;
+}
+.imglist {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.img {
+  border:1px solid #dedede;
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 20rpx;
+}
+.pic-icon {
+  font-size: 60rpx;
+}
+
+.cdetail-btn {
+  margin-top: 100rpx;
+  height: 88rpx;
+  width: 100%;
+  line-height: 88rpx;
+  color: white;
+  text-align: center;
+  display:flex;
+  flex-direction: row;
+}
+.cdetail-btn >view {
+  flex:1;
+  text-align:center;
+}
+button[type="default"].check-btn {
+  width: 626rpx;
+  color: #fff;
+  font-size: 26rpx;
+  padding: 15rpx 0;
+  background: #ffcf55;
+}
+button[disabled][type="default"].check-btn {
+  background: #aaa;
+}

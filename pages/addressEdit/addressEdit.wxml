@@ -1,0 +1,49 @@
+<view class="inputlist">
+  <text>  收货人：</text>
+  <input type="text" value="{{addressList.consignee}}" class="input" bindinput="consigneeInput"/>
+</view>
+<view class="inputlist">
+  <text>手机号码：</text>
+  <input type="number" value="{{addressList.mobile}}" maxlength="11" class="input" bindinput="mobileInput"/>
+</view>
+<view class="inputlist">
+  <text>邮政编码：</text>
+  <input type="number" value="{{addressList.zipcode}}" maxlength="11" class="input" bindinput="zipcodeInput"/>
+</view>
+<view class="inputlist rows">
+  <view class="city">
+    <text>所在省份：</text>
+    <input type="text" value="{{province}}" disabled="true" class="input" data-id="{{addressList.province}}" bindinput="provinceInput"/>
+  </view>
+  <picker mode="selector" value="{{provinceIndex}}" range="{{provinceArray}}" bindchange="bindProvinceChange">
+    <view class="region-list"></view>
+    <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+  </picker>
+</view>
+<view class="inputlist rows">
+  <view class="city">
+    <text>所在城市：</text>
+    <input type="text" value="{{city}}" disabled="true" class="input"  data-id="{{addressList.city}}" bindinput="cityInput"/>
+  </view>
+  <picker mode="selector" value="{{cityIndex}}" range="{{cityArray}}" bindchange="bindCityChange">
+    <view class="region-list"></view>
+    <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+  </picker>
+</view>
+<view class="inputlist rows">
+  <view class="city">
+    <text>所在区域：</text>
+    <input type="text" value="{{district}}" disabled="true" class="input" data-id="{{addressList.district}}" bindinput="districtInput"/>
+  </view>
+  <picker mode="selector" value="{{districtIndex}}" range="{{districtArray}}" bindchange="bindDistrictChange">
+    <view class="region-list"></view>
+    <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+  </picker>
+</view>
+<view class="inputlist">
+  <text>详细地址：</text>
+  <input type="text" value="{{addressList.address}}" class="input" bindinput="addressInput"/>
+</view>
+<view class="cdetail-btn">
+  <view style="background: #039be5;" bindtap="bindButtonTap">保存</view>  
+</view>

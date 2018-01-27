@@ -1,0 +1,45 @@
+<import src="/template/pay/pay.wxml" />
+<view wx:if="{{!isPayShow}}">
+  <view style="background:white;margin-bottom:20rpx">
+    <text class="tip">选购信息</text>
+    <view class="content">
+      <view class="inbasket-content">
+        <image src="{{initData.activity.thumb}}"></image>
+        <view class="content-info">
+          <text class="info-title">{{initData.activity.type_name}} {{initData.activity.package_name}}</text>
+          <text class="info-attr">套餐商品数量：{{initData.activity.num}}件</text>
+          <view class="info-buy">
+            <text>¥{{initData.activity.package_price}}</text>
+            <text class="btn" wx:if="{{initData.order.pay_status == 1}}">转账审核中</text>
+            <text class="btn" wx:if="{{initData.order.pay_status == 0}}" data-id="{{order_id}}" bindtap="changeShow">付款</text>
+          </view>
+        </view>
+      </view>
+      <view class="texts">
+        <text>订单号码：{{initData.order.order_sn}}</text>
+        <text>添加时间：{{initData.order.add_time}}</text>
+        <text wx:if="{{initData.order.pay_id == 2 && initData.transfer.admin_note}}">说明：{{initData.transfer.admin_note}}</text>
+      </view>
+    </view>
+  </view>
+  <view style="background:white;margin-bottom:20rpx">
+    <text class="tip">注册信息</text>
+    <view class="texts">
+      <text>用户名：{{initData.user.username}}</text>
+      <text>手机号码：{{initData.user.mobile}}</text>
+    </view>
+  </view>
+  <view style="background:white;margin-bottom:20rpx">
+    <text class="tip">收款人信息</text>
+    <view class="texts">
+      <text>收款人：{{initData.bank.bank_user}}</text>
+      <text>收款账号：{{initData.bank.bank_card}}</text>
+      <text>收款银行：{{initData.bank.bank_name}}</text>
+      <text class="blue">特别说明：银行转账时需要添加<text class="red">  {{initData.user.username}}  </text>至备注说明里</text>
+    </view>
+  </view>
+</view>
+<view wx:else>
+    <template is="pay" data="{{isAddressShow:isAddressShow,dataHeight:dataHeight,isShow:isShow,orderConfirm:orderConfirm}}"></template>
+    <view class="cdetail-btn" catchtap="gotoPay">确认支付</view>
+</view>

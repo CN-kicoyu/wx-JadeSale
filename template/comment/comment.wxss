@@ -1,0 +1,28 @@
+.comment {
+    padding:30rpx 0 20rpx;
+    border-bottom:1px dashed #ccc;
+    display:flex;
+    flex-direction: column;
+}
+
+.comment-avatar {
+    width:58rpx;
+    height:58rpx;
+    border-radius:50%;
+    margin-right:30rpx;
+    vertical-align: middle;
+}
+
+.comment-name {
+    vertical-align: middle;
+}
+.comment-member {
+    width:26rpx;
+    height:26rpx;
+    margin-left:20rpx;
+    vertical-align: middle;
+}
+
+.comment-txt {
+    margin:30rpx 0 20rpx;
+}

@@ -1,0 +1,33 @@
+<template name="orderItem">
+  <view class="order-item">
+    <view class="order-item-title">
+      <view>
+        <text wx:if="{{extension_code == 0}}">通天玉官网</text>
+        <text wx:if="{{extension_code == 1}}">通天玉团购</text>
+        <text wx:if="{{extension_code == 2}}">通天玉拍卖</text>
+        <text wx:if="{{extension_code == 4}}">积分商城</text>
+        <text wx:if="{{extension_code == 5}}">积分兑换</text>
+        <text wx:if="{{extension_code == 7}}">注册礼包</text>
+        <image src="/images/icon/arrow-right.png" class="order-item-arrow"></image>
+      </view>
+      <view class="order-item-status">
+        <text wx:if="{{is_comment == 0}}">待评价</text>
+        <text wx:if="{{is_comment == 1}}">已评价</text>
+      </view>
+    </view>
+    <view class="inbasket-content">
+      <image src="{{goods_img}}"></image>
+      <view class="content-info">
+        <text class="info-title">{{goods_name}}</text>
+        <text class="info-attr">颜色：褐色；尺码：均码</text>
+        <view class="info-buy">
+          <text>¥{{goods_price}}</text>
+          <text>x{{goods_number}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="order-item-btn" data-index="{{rec_id}}" wx:if="{{is_comment == 0}}" catchtap="gotoComment">
+      <text data-sn="{{order_sn}}" >评价</text>
+    </view>
+  </view>
+</template>

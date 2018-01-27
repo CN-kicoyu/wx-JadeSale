@@ -1,0 +1,43 @@
+<view class="inputlist rows">
+  <view class="city">
+    <text>密保一：</text>
+    <input type="text" value="{{city}}" disabled="true" class="input"  data-id="{{addressList.city}}" bindinput="cityInput"/>
+  </view>
+  <picker mode="selector" value="{{cityIndex}}" range="{{cityArray}}" bindchange="bindCityChange">
+    <view class="region-list"></view>
+    <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+  </picker>
+</view>
+<view class="inputlist">
+  <text>答案：</text>
+  <input type="number" value="{{addressList.mobile}}" maxlength="11" class="input" bindinput="mobileInput"/>
+</view>
+<view class="inputlist rows">
+  <view class="city">
+    <text>密保二：</text>
+    <input type="text" value="{{city}}" disabled="true" class="input"  data-id="{{addressList.city}}" bindinput="cityInput"/>
+  </view>
+  <picker mode="selector" value="{{cityIndex}}" range="{{cityArray}}" bindchange="bindCityChange">
+    <view class="region-list"></view>
+    <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+  </picker>
+</view>
+<view class="inputlist">
+  <text>答案：</text>
+  <input type="number" value="{{addressList.mobile}}" maxlength="11" class="input" bindinput="mobileInput"/>
+</view>
+<view class="inputlist rows">
+  <view class="city">
+    <text>密保三：</text>
+    <input type="text" value="{{city}}" disabled="true" class="input"  data-id="{{addressList.city}}" bindinput="cityInput"/>
+  </view>
+  <picker mode="selector" value="{{cityIndex}}" range="{{cityArray}}" bindchange="bindCityChange">
+    <view class="region-list"></view>
+    <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+  </picker>
+</view>
+<view class="inputlist">
+  <text>答案：</text>
+  <input type="number" value="{{addressList.mobile}}" maxlength="11" class="input" bindinput="mobileInput"/>
+</view>
+<button form-type="submit" type="default" loading="{{isloading}}" hover-class="button-hover" class="btn" bindtap="bindButtonTap" disabled="{{btnDisabled}}" > 立即修改 </button>

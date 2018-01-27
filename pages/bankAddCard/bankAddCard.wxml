@@ -1,0 +1,33 @@
+<!--pages/bankAddCard/bankAddCard.wxml-->
+<text class="info">请填写本人所持有的银行卡信息</text>
+<view class="inputlist rows">
+  <view class="city">
+    <text>银行名称：</text>
+    <input type="text" value="{{bankName}}" disabled="true" class="input" bindinput="bankidInput"/>
+  </view>
+  <picker mode="selector" value="{{bankIndex}}" range="{{bankArray}}" bindchange="bindBankChange">
+    <view class="region-list"></view>
+    <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+  </picker>
+</view>
+<view class="inputlist">
+  <text>开户行：</text>
+  <input type="text" value="{{bank_of_deposit}}" class="input" bindinput="depositInput"/>
+</view>
+<view class="inputlist">
+  <text>银行户名：</text>
+  <input type="text" value="{{bank_user}}" class="input" bindinput="isChange" bindinput="userInput"/>
+</view>
+<view class="inputlist" style="border:0">
+  <text>银行卡号：</text>
+  <input type="number" value="{{bank_card}}" class="input" bindinput="isChange" bindinput="cardInput"/>
+</view>
+<view class="next">
+  <view class="info" wx:if="{{false}}">
+    <icon type="{{isCheck ? 'success' : 'circle'}}" size="14" class="check-btn" style="{{isCheck ? 'color:#f15352' : 'color:#cccccc'}}" data-index="{{index}}" catchtap="checkPay" />
+    <text>点击下一步后即表示同通天珠宝《用户使用协议》</text>
+  </view>
+  <view class="btn">
+    <button type="default" loading="{{isloading}}" form-type="submit" class="check-btn" bindtap="bindButtonTap" disabled="{{btnDisabled}}"> 确认 </button>
+  </view>
+</view>

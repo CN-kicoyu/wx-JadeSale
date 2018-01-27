@@ -1,0 +1,28 @@
+.exchange-list {
+    background: white;
+    padding:0 30rpx;
+}
+.exchange-list-item {
+    padding:20rpx 0;
+    border-bottom:1px dashed #ccc;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.exchange-item-time {
+    display: block;
+    color:#999;
+    font-weight: normal;
+    margin-top:7rpx;
+}
+.exchange-item-right {
+    text-align:right;
+}
+.exchange-txt {
+    display: block;
+    width:460rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

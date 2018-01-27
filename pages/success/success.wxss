@@ -1,0 +1,25 @@
+page {
+  background: white;
+  text-align: center;
+}
+.img {
+  width: 430rpx;
+  height:170rpx;
+  margin: 0 auto;
+  display: block;
+  margin-top:70rpx;
+}
+.text {
+  font-size: 26rpx;
+  color:#4e80ff;
+  display: block;
+  margin-top:40rpx;
+}
+button[type="default"].btn {
+  width: 195rpx;
+  margin-top: 80rpx;
+  color: #fff;
+  background: #ffcf55;
+  font-size: 26rpx;
+  padding: 10rpx 0;
+}

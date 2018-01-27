@@ -1,0 +1,148 @@
+@import "/template/goodCol2/goodCol2.wxss";
+.actived {
+  height:100%;
+  overflow:hidden;
+}
+.index-nav {
+  height:80rpx;
+  background:#ffcf55;
+  display:flex;
+  flex-direction:row;
+  position:relative;
+  padding:0 30rpx;
+  justify-content: space-between;
+}
+
+.index-nav-search {
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+  background:#ffb2b1;
+  height:52rpx;
+  width:605rpx;
+  margin:15rpx 10rpx 15rpx 0;
+  border-radius:4rpx;
+  padding:0 20rpx;
+}
+
+
+.search-text{
+  font-size:26rpx;
+  margin-left:20rpx;
+  width:100%;
+}
+
+.index-nav-notice {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  width:60rpx;
+  font-size:20rpx;
+  color:white;
+  margin-top:18rpx;
+}
+
+.notice-icon {
+  display:block;
+  width:26rpx;
+  height:26rpx;
+}
+
+.index-banner, .index-banner image {
+  width:100%;
+  height:450rpx;
+}
+
+.index-menu {
+  background:#fff;
+  display:flex;
+  padding:30rpx 0;
+}
+
+.index-menu-entry {
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-menu-entry image {
+  width:86rpx;
+  height:86rpx;
+}
+
+.index-menu-entry text {
+  font-size:26rpx;
+  margin-top:12rpx;
+}
+
+.index-intro {
+  margin-top:20rpx;
+  background:white;
+  padding-bottom:20rpx;
+}
+
+.index-intro-title {
+  display:flex;
+  font-size:26rpx;
+  align-items: center;
+  padding:20rpx 0;
+}
+
+.half-hr {
+  flex:1; 
+}
+
+.half-hr > text {
+  display:block;
+  height:1px;
+  background:#cccccc;
+  width:120rpx;
+}
+
+.half-hr > text.right {
+  float:right;
+  margin-right:20rpx;
+}
+
+.half-hr > text.left {
+  float:left;
+  margin-left:20rpx;
+}
+
+.index-intro-img {
+  padding:0 10rpx;
+}
+
+.index-intro-img image {
+  height:267rpx;
+  width:100%;
+  margin:-3px 0 0 0;
+  padding:0;
+}
+.mask {
+  background: rgba(0,0,0,.5);
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.content {
+  position:relative;
+  width:100%;
+  padding:130rpx 0;
+}
+.close {
+  width:54rpx;
+  height:53rpx;
+  position:absolute;
+  top:80rpx;
+  right:100rpx;
+}
+.imgs {
+  width: 577rpx;
+  height:840rpx;
+  display: block;
+  margin:0 auto;
+}

@@ -1,0 +1,70 @@
+<import src="../../template/goodCol2/goodCol2.wxml" />
+<import src="/template/auctionDisplay/auctionDisplay.wxml" />
+<view class="order-fixed">
+  <view class="order-nav">
+    <block wx:for="{{tabNavbar}}">
+      <text class="{{item.actived ? 'actived' : ''}}" catchtap="changeTab" data-change="{{index}}">{{item.title}}</text>
+    </block>
+  </view>
+</view>
+<view class="nav-contain" wx:if="{{tabNavbar[0].actived}}">
+  <block wx:for="{{initData}}">
+    <view class="goodcol2">
+      <view catchtap="onAuctionDetail" >
+        <template is="goodCol2" data="{{...item}}"></template>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="nav-contain" wx:elif="{{tabNavbar[1].actived}}">
+  <block wx:for="{{displayTmp}}">
+    <view>
+      <template is="auctionDisplay" data="{{...item}}"></template>
+    </view>
+  </block>
+</view>
+<view style="margin-top:90rpx;" wx:elif="{{tabNavbar[2].actived}}">
+  <swiper class="index-banner" indicator-dots="true" autoplay="true" circular="true" indicator-color="#513737" indicator-active-color="#f96b69">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="order-nav">
+    <block wx:for="{{subNavbar}}">
+      <text class="{{item.actived ? 'actived' : ''}}" catchtap="changesubTab" data-change="{{index}}">{{item.title}}</text>
+    </block>
+  </view>
+  <view wx:if="{{subNavbar[0].actived}}">
+  <block wx:for="{{initData}}">
+    <view class="goodcol2">
+      <view catchtap="onAuctionDetail">
+        <template is="goodCol2" data="{{...item}}"></template>
+      </view>
+    </view>
+  </block>
+</view>
+<view wx:else>
+  <block wx:for="{{displayTmp}}">
+    <view>
+      <template is="auctionDisplay" data="{{...item}}"></template>
+    </view>
+  </block>
+</view>
+</view>
+<view wx:else class="nav-contain">
+<block wx:for="{{historyTmp}}">
+  <view class="inbasket-content">
+    <image src="{{item.imgUrl}}"></image>
+    <view class="content-info">
+      <text class="info-title">{{item.title}}</text>
+      <text class="info-attr">匠人：{{item.autor}}</text>
+      <view class="info-buy">
+        <text class="info-buy-price">成交价： ¥{{item.bidNum}}.00</text>
+        <text>已结束</text>
+      </view>
+    </view>
+  </view>
+</block>
+</view>

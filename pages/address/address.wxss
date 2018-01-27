@@ -1,0 +1,72 @@
+/* pages/address/address.wxss */
+
+.list {
+  padding: 0 30rpx;
+  align-items: middle;
+  background: white;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 20rpx;
+}
+
+.name-list {
+  display: flex;
+  flex-direction: row;
+  font-size: 26rpx;
+  padding: 30rpx 0;
+  justify-content: flex-start;
+}
+
+.name-list >text:first-child {
+  margin-right: 113rpx;
+}
+
+.where {
+  font-size: 26rpx;
+  color: #aaa;
+  display: block;
+}
+
+.control {
+  border-top: 1px solid #dedede;
+  padding: 20rpx 0;
+  margin-top: 30rpx;
+  color: #aaa;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.check-btn {
+  margin-right: 20rpx;
+  align-self: center;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.btn {
+  margin-left:46rpx;
+  display:flex;
+}
+.btn > image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 15rpx;
+  align-self: center;
+}
+
+.cdetail-btn {
+  height: 88rpx;
+  width: 100%;
+  line-height: 88rpx;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #ffcf55;
+}

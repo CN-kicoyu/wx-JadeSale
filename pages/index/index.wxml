@@ -1,0 +1,65 @@
+<import src="/template/goodCol2/goodCol2.wxml" />
+<view class="{{isActived ? 'actived': ''}}">
+<swiper class="index-banner" indicator-dots="true" autoplay="true" circular="true" indicator-color="#513737" indicator-active-color="#f96b69">
+  <block wx:for="{{imgUrls}}" wx:key="unique">
+    <swiper-item>
+      <image src="{{item.thumb}}" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="index-menu">
+  <block wx:for="{{subMenuData}}" wx:key="unique">
+    <view class="index-menu-entry" catchtap="subMenuEntry" data-item="{{index}}">
+      <image src="{{item.img}}" />
+      <text>{{item.name}}</text>
+    </view>
+  </block>
+</view>
+<view class="index-intro">
+  <view class="index-intro-title">
+    <view class="half-hr"><text class="right"></text></view>
+    <text>热门兑换</text>
+    <view class="half-hr"><text class="left"></text></view>
+  </view>
+  <view class="index-intro-img">
+    <block wx:for="{{introImg}}" wx:key="unique">
+      <image src="{{item}}" />
+    </block>
+  </view>
+</view>
+<view class="index-intro">
+  <view class="index-intro-title">
+    <view class="half-hr"><text class="right"></text></view>
+    <text>精品玉器</text>
+    <view class="half-hr"><text class="left"></text></view>
+  </view>
+  <view class="index-intro-goods">
+    <block wx:for="{{goodsInfo}}" wx:key="unique">
+      <view class="goodcol2" data-goods_id="{{item.goods_id}}" catchtap="gotoDatils" >
+        <template is="goodCol2" data="{{...item}}"></template>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="index-intro">
+  <view class="index-intro-title">
+    <view class="half-hr"><text class="right"></text></view>
+    <text>热销红酒</text>
+    <view class="half-hr"><text class="left"></text></view>
+  </view>
+  <view class="index-intro-goods">
+    <block wx:for="{{goodsInfo}}" wx:key="unique">
+      <view class="goodcol2" data-goods_id="{{item.goods_id}}" catchtap="gotoDatils" >
+        <template is="goodCol2" data="{{...item}}"></template>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class="mask" wx:if="{{isActived}}">
+  <view class="content">
+    <image src="/images/icon/close-r.png" class="close" catchtap="onActived"></image>
+    <image src="http://oo3thr1aa.bkt.clouddn.com/actives.png" class="imgs" catchtap="goExchange"></image>
+  </view>
+</view>
+</view>

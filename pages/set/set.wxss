@@ -1,0 +1,23 @@
+/* pages/set/set.wxss */
+.line {
+  padding:30rpx;
+  background: white;
+  border-bottom:1px solid #dedede;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.line:last-child {
+  border: 0;
+}
+.icon {
+  width:32rpx;
+  height:30rpx;
+  margin-right:20rpx;
+  vertical-align: middle;
+}
+.menu-arrow {
+  width: 12rpx;
+  height: 26rpx;
+}

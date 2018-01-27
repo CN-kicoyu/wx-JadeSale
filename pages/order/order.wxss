@@ -1,0 +1,73 @@
+@import "../../template/goodOrder/goodOrder.wxss";
+@import "/template/pay/pay.wxss";
+.basket-none-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ccc;
+}
+.basket-none {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 29% auto 30rpx;
+}
+
+.cdetail-btn {
+  height: 88rpx;
+  width:100%;
+  line-height: 88rpx;
+  color:white;
+  text-align: center;
+  position: fixed;
+  bottom:0;
+  left:0;
+  background: #ffcf55;
+}
+
+.order-fixed {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+}
+.order-nav {
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: white;
+  margin-bottom: 20rpx;
+  border-bottom:1px solid #dedede;
+}
+
+.order-nav > text {
+  display: block;
+  color: #999;
+  font-size: 26rpx;
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.order-nav > text.actived {
+  border-bottom: 2px solid #ffcf55;
+  color: #ffcf55;
+  font-weight: bold;
+}
+.nav-contain {
+  margin-top:112rpx;
+}
+.new-notice {
+  position: absolute;
+  top: 8rpx;
+  right: -1rpx;
+  width: 26rpx;
+  height: 26rpx;
+  border-radius: 50%;
+  border: 2rpx solid #ffcf55;
+  color: #ffcf55;
+  background: white;
+  font-size: 20rpx;
+  display: block;
+  text-align: center;
+  line-height: 26rpx;
+}

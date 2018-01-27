@@ -1,0 +1,54 @@
+page {
+  background: white;
+}
+
+.header {
+  position: relative;
+}
+
+.bg {
+  width: 100%;
+  height: 780rpx;
+  display: block;
+}
+
+.logo {
+  width: 280rpx;
+  height: 256rpx;
+  margin: -140rpx auto 0;
+  display: block;
+  z-index: 99;
+}
+
+.text {
+  padding: 40rpx 30rpx;
+  color: #555;
+  text-align: center;
+  display: block;
+  font-size: 24rpx;
+}
+
+.btns {
+  border-top: 1px solid #dedede;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btns > text {
+  flex: 1;
+  text-align: center;
+  font-size: 30rpx;
+  align-self: center;
+  margin: 15rpx 0;
+  padding: 10rpx 0;
+}
+
+.borderR {
+  border-right: 1px solid #dedede;
+}
+
+.fixed-box {
+  position: fixed;
+  bottom: 0;
+}

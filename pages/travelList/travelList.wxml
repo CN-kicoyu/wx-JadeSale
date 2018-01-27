@@ -1,0 +1,71 @@
+<view class="travel">
+    <image src="/images/index/travel-banner.jpg"></image>
+    <view class="travel-place">
+      <view class="place">
+        <image src="/images/icon/travel.png"></image>
+        <text>马来西亚</text>
+      </view>
+      <text>马来西亚大海岛</text>
+      <text>2017-05-02 ~ 2017-06-10</text>
+    </view>
+</view>
+<view class="travel-wrap">
+  <view class="wrap">
+    <view class="wrap-name">
+      <text>第一站：大码头</text>
+    </view>
+    <view class="wrap-place">
+      <image src="/images/icon/travel-icon.png" class="icon"></image>
+      <view class="text">
+        <text>四季皆宜。马尔代夫位于赤道线上，属热带海洋性气候，受季风影响，四季温暖，湿度较大。但是马尔代夫日夜温差不大，基本上全年适合观光旅游。 5月到9月是雨季，比较闷热，常有阵雨。从10月底一直到圣诞节是马尔代夫的旅游旺季。不过游客应避开圣诞节高峰，这时游人如织，订房困难且房价贵</text>
+        <image src="http://oo3thr1aa.bkt.clouddn.com/travel-img-10.jpg"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="travel-wrap">
+  <view class="wrap">
+    <view class="wrap-name">
+      <text>第二站：大码头</text>
+    </view>
+    <view class="wrap-place">
+      <image src="/images/icon/travel-icon.png" class="icon"></image>
+      <view class="text">
+        <text>四季皆宜。马尔代夫位于赤道线上，属热带海洋性气候，受季风影响，四季温暖，湿度较大。但是马尔代夫日夜温差不大，基本上全年适合观光旅游。 5月到9月是雨季，比较闷热，常有阵雨。从10月底一直到圣诞节是马尔代夫的旅游旺季。不过游客应避开圣诞节高峰，这时游人如织，订房困难且房价贵</text>
+        <view class="imgs">
+          <image src="http://oo3thr1aa.bkt.clouddn.com/travel-img-6.jpg"></image>
+          <image src="http://oo3thr1aa.bkt.clouddn.com/travel-img-7.jpg"></image>
+          <image src="http://oo3thr1aa.bkt.clouddn.com/travel-img-8.jpg"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="travel-wrap">
+  <view class="wrap">
+    <view class="wrap-name">
+      <text>第三站：大码头</text>
+    </view>
+    <view class="wrap-place">
+      <image src="/images/icon/travel-icon.png" class="icon"></image>
+      <view class="text">
+        <text>四季皆宜。马尔代夫位于赤道线上，属热带海洋性气候，受季风影响，四季温暖，湿度较大。但是马尔代夫日夜温差不大，基本上全年适合观光旅游。 5月到9月是雨季，比较闷热，常有阵雨。从10月底一直到圣诞节是马尔代夫的旅游旺季。不过游客应避开圣诞节高峰，这时游人如织，订房困难且房价贵</text>
+        <image src="http://oo3thr1aa.bkt.clouddn.com/travel-img-10.jpg"></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="travel-wrap">
+  <view class="wrap">
+    <view class="wrap-name">
+      <text>第四站：大码头</text>
+    </view>
+    <view class="wrap-place">
+      <image src="/images/icon/travel-icon.png" class="icon"></image>
+      <view class="text">
+        <text>四季皆宜。马尔代夫位于赤道线上，属热带海洋性气候，受季风影响，四季温暖，湿度较大。但是马尔代夫日夜温差不大，基本上全年适合观光旅游。 5月到9月是雨季，比较闷热，常有阵雨。从10月底一直到圣诞节是马尔代夫的旅游旺季。不过游客应避开圣诞节高峰，这时游人如织，订房困难且房价贵</text>
+        <image src="http://oo3thr1aa.bkt.clouddn.com/travel-img-10.jpg"></image>
+      </view>
+    </view>
+  </view>
+</view>

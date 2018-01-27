@@ -1,0 +1,27 @@
+<image src="http://oo3thr1aa.bkt.clouddn.com/welfare-banner.jpg" class="welfare-banner" />
+  <view class="welfare-activity" catchtap="gotoStocks">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/welfare-a1.jpg" />
+    <text>竞猜上证综指，积分投注</text>
+    <text class="welfare-activity-btn">立即参与</text>
+  </view>
+  <!--<view class="welfare-activity" catchtap="gotoAgainst">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/welfare-a2.jpg" />
+    <text>一元竞猜竞价，猜中夺宝</text>
+    <text class="welfare-activity-btn">立即参与</text>
+  </view>-->
+  <view class="welfare-activity" catchtap="gotoAuction">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/welfare-a3.jpg" />
+    <text>精品优惠拍卖，仅此一次</text>
+    <text class="welfare-activity-btn">立即参与</text>
+  </view>
+  <view class="welfare-activity" catchtap="gotoMarket">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/welfare-a4.jpg" />
+    <text>体会匠工精神，发现美好</text>
+    <text class="welfare-activity-btn">立即参与</text>
+  </view>
+  <view class="welfare-activity" catchtap="gotoTravel">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/welfare-a5.jpg" />
+    <text>近距离零接触，感受自然</text>
+    <text class="welfare-activity-btn">立即参与</text>
+  </view>
+  <view class="y-cl"></view>

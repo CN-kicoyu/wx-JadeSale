@@ -1,0 +1,14 @@
+.score {
+    display: flex;
+    flex-direction: row;
+}
+
+.score > image.star {
+    width:30rpx;
+    height:30rpx;
+    margin-right:10rpx;
+}
+
+.score > image.star:last-child {
+    margin-right:30rpx;
+}

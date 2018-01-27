@@ -1,0 +1,41 @@
+<import src="../../template/goodOrder/goodOrder.wxml" />
+<view class="items">
+  <view class="content">
+    <block wx:for="{{appinfo.goods}}">
+      <view class="inbasket-content">
+        <image src="{{item.goods_img}}"></image>
+        <view class="content-info">
+          <text class="info-title">{{item.goods_name}}</text>
+          <text class="info-attr">颜色：褐色；尺码：均码</text>
+          <view class="info-buy">
+            <text>¥{{item.goods_price}}</text>
+            <text>x{{item.goods_number}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<view>
+  <view class="inputlist">
+    <text>退款金额：</text>
+    <text style="color:#f15352;font-weight:bold">￥{{appinfo.order.money_paid}}</text>
+  </view>
+  <view class="inputlist rows">
+    <view class="reason">
+      <text>退款账户：</text>
+     <input type="text" value="{{bankName}}" disabled="true" class="input" bindinput="bankidInput"/>
+    </view>
+     <picker mode="selector" value="{{bankIndex}}" range="{{bankArray}}" bindchange="bindBankChange">
+      <view class="region-list"></view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </picker>
+  </view>
+  <view class="inputlist">
+    <text>退款说明：</text>
+     <input type="text" value="{{content}}" class="input" bindinput="contentInput"/>
+  </view>
+  <view class="cdetail-btn">
+    <button type="default" loading="{{isloading}}" form-type="submit" class="check-btn" bindtap="bindButtonTap" disabled="{{btnDisabled}}"> 提交 </button>
+  </view>
+</view>

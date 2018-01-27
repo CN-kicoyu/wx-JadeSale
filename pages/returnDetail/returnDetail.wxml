@@ -1,0 +1,38 @@
+<view class="title">
+  <text  class="title-big">请耐心等待商家处理</text>
+  <text>还剩1天23小时32分</text>
+</view>
+<view class="detail">
+  <text class="detail-title">您已成功发起退货申请，请耐心等待商家处理</text>
+  <view class="list">
+    <text>1.商家同意或者超时未处理，系统将自动退款给您</text>
+    <text>2.如果商家拒绝，您可以重新发起退款申请</text>
+  </view>
+  <view class="btn-wrap">
+    <text class="btn">修改申请</text>
+  </view>
+</view>
+<view style="background:white;margin-bottom:40rpx">
+  <text class="tip">退款信息</text>
+  <view  class="content">
+    <block wx:for="{{subgood}}">
+    <view class="inbasket-content">
+      <image src="{{item.imgUrl}}"></image>
+      <view class="content-info">
+        <text class="info-title">{{item.title}}</text>
+        <text class="info-attr">颜色：褐色；尺码：均码</text>
+        <view class="info-buy">
+          <text>¥{{item.price}}</text>
+          <text>x{{item.num}}</text>
+        </view>
+      </view>
+    </view>
+    </block>
+  </view>
+  <view class="texts">
+    <text>退货原因：多拍了/重复订单</text>
+    <text>退货金额：￥89.00</text>
+    <text>申请时间：2028-92-23 23：00：93</text>
+    <text>订单号码：324324324234324324</text>
+  </view>
+</view>

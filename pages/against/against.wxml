@@ -1,0 +1,187 @@
+<view class="against-wrap">
+  <view class="inbasket-content">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/goods-10.jpg"></image>
+    <view class="content-info">
+      <text class="info-title">珪宝天然和田玉白玉龙牌吊坠男款生肖龙玉石玉坠玉牌</text>
+      <view class="good-col-price">
+        <text class="price-current">￥1.00</text>
+        <text class="price-old">￥ 2355.00<text class="text-del"></text>
+        </text>
+      </view>
+      <view class="info-buy">
+        <view class="against-last">
+            <progress percent="76" activeColor="#039be6" style="border-radius:50px;"/>
+            <view class="against-last-time">
+             <image src="/images/icon/appointment2.png"></image>
+             <text>还剩 10：20：30 结束</text>
+            </view>
+        </view>
+        <view class="info-num">
+          <image src="/images/icon/basket.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="inbasket-content">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/goods-01.jpg"></image>
+    <view class="content-info">
+      <text class="info-title">珪宝天然和田玉白玉龙牌吊坠男款生肖龙玉石玉坠玉牌</text>
+      <view class="good-col-price">
+        <text class="price-current">￥1.00</text>
+        <text class="price-old">￥ 2355.00<text class="text-del"></text>
+        </text>
+      </view>
+      <view class="info-buy">
+        <view class="against-last">
+            <progress percent="76" activeColor="#039be6" style="border-radius:50px;"/>
+            <view class="against-last-time">
+             <image src="/images/icon/appointment2.png"></image>
+             <text>还剩 10：20：30 结束</text>
+            </view>
+        </view>
+        <view class="info-num">
+          <image src="/images/icon/basket.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="inbasket-content">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/goods-11.jpg"></image>
+    <view class="content-info">
+      <text class="info-title">珪宝天然和田玉白玉龙牌吊坠男款生肖龙玉石玉坠玉牌</text>
+      <view class="good-col-price">
+        <text class="price-current">￥1.00</text>
+        <text class="price-old">￥ 2355.00<text class="text-del"></text>
+        </text>
+      </view>
+      <view class="info-buy">
+        <view class="against-last">
+            <progress percent="76" activeColor="#039be6" style="border-radius:50px;"/>
+            <view class="against-last-time">
+             <image src="/images/icon/appointment2.png"></image>
+             <text>还剩 10：20：30 结束</text>
+            </view>
+        </view>
+        <view class="info-num">
+          <image src="/images/icon/basket.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="inbasket-content">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/goods-12.jpg"></image>
+    <view class="content-info">
+      <text class="info-title">珪宝天然和田玉白玉龙牌吊坠男款生肖龙玉石玉坠玉牌</text>
+      <view class="good-col-price">
+        <text class="price-current">￥1.00</text>
+        <text class="price-old">￥ 2355.00<text class="text-del"></text>
+        </text>
+      </view>
+      <view class="info-buy">
+        <view class="against-last">
+            <progress percent="76" activeColor="#039be6" style="border-radius:50px;"/>
+            <view class="against-last-time">
+             <image src="/images/icon/appointment2.png"></image>
+             <text>还剩 10：20：30 结束</text>
+            </view>
+        </view>
+        <view class="info-num">
+          <image src="/images/icon/basket.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="inbasket-content">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/goods-04.jpg"></image>
+    <view class="content-info">
+      <text class="info-title">珪宝天然和田玉白玉龙牌吊坠男款生肖龙玉石玉坠玉牌</text>
+      <view class="good-col-price">
+        <text class="price-current">￥1.00</text>
+        <text class="price-old">￥ 2355.00<text class="text-del"></text>
+        </text>
+      </view>
+      <view class="info-buy">
+        <view class="against-last">
+            <progress percent="76" activeColor="#039be6" style="border-radius:50px;"/>
+            <view class="against-last-time">
+             <image src="/images/icon/appointment2.png"></image>
+             <text>还剩 10：20：30 结束</text>
+            </view>
+        </view>
+        <view class="info-num">
+          <image src="/images/icon/basket.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="inbasket-content">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/goods-06.jpg"></image>
+    <view class="content-info">
+      <text class="info-title">珪宝天然和田玉白玉龙牌吊坠男款生肖龙玉石玉坠玉牌</text>
+      <view class="good-col-price">
+        <text class="price-current">￥1.00</text>
+        <text class="price-old">￥ 2355.00<text class="text-del"></text>
+        </text>
+      </view>
+      <view class="info-buy">
+        <view class="against-last">
+            <progress percent="76" activeColor="#039be6" style="border-radius:50px;"/>
+            <view class="against-last-time">
+             <image src="/images/icon/appointment2.png"></image>
+             <text>还剩 10：20：30 结束</text>
+            </view>
+        </view>
+        <view class="info-num">
+          <image src="/images/icon/basket.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="inbasket-content">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/goods-02.jpg"></image>
+    <view class="content-info">
+      <text class="info-title">珪宝天然和田玉白玉龙牌吊坠男款生肖龙玉石玉坠玉牌</text>
+      <view class="good-col-price">
+        <text class="price-current">￥1.00</text>
+        <text class="price-old">￥ 2355.00<text class="text-del"></text>
+        </text>
+      </view>
+      <view class="info-buy">
+        <view class="against-last">
+            <progress percent="76" activeColor="#039be6" style="border-radius:50px;"/>
+            <view class="against-last-time">
+             <image src="/images/icon/appointment2.png"></image>
+             <text>还剩 10：20：30 结束</text>
+            </view>
+        </view>
+        <view class="info-num">
+          <image src="/images/icon/basket.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="inbasket-content">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/goods-04.jpg"></image>
+    <view class="content-info">
+      <text class="info-title">珪宝天然和田玉白玉龙牌吊坠男款生肖龙玉石玉坠玉牌</text>
+      <view class="good-col-price">
+        <text class="price-current">￥1.00</text>
+        <text class="price-old">￥ 2355.00<text class="text-del"></text>
+        </text>
+      </view>
+      <view class="info-buy">
+        <view class="against-last">
+            <progress percent="76" activeColor="#039be6" style="border-radius:50px;"/>
+            <view class="against-last-time">
+             <image src="/images/icon/appointment2.png"></image>
+             <text>还剩 10：20：30 结束</text>
+            </view>
+        </view>
+        <view class="info-num">
+          <image src="/images/icon/basket.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

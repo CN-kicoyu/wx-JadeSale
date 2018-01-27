@@ -1,0 +1,104 @@
+<import src="../../template/score/score.wxml" />
+<import src="../../template/comment/comment.wxml" />
+<import src="../../wxParse/wxParse.wxml"/> 
+
+<view class="product-detail">
+  <swiper class="detail-banner" indicator-dots="true" autoplay="true" circular="true" indicator-color="#513737" indicator-active-color="#f96b69">
+  <block wx:for="{{goodsInfo.goodsGallery}}">
+    <swiper-item>
+      <image src="{{item.img_url}}" class="slide-image" height="500" min-width="320"/>
+    </swiper-item>
+  </block>
+</swiper>
+  <view class="detail-scale" catchtap="imgScale">
+    <image  wx:for="{{goodsInfo.goodsGallery}}" src="{{item.img_url}}" data-id="{{item.img_id}}" ></image>
+  </view>
+  <view class="detail-title">
+    <text>{{goodsInfo.goodsinfo.goods_name}}</text>
+  </view>
+  <view class="good-col-price">
+    <text class="price-current">￥ {{goodsInfo.goodsinfo.shop_price}}</text>
+    <text class="price-old">￥ {{goodsInfo.goodsinfo.market_price}}
+      <text class="text-del"></text>
+    </text>
+    <text class="price-attr" wx:if="{{goodsInfo.goodsinfo.is_promote}}">特价商品</text>
+  </view>
+  <view class="detail-safe">
+    <view class="detail-safe-item">
+      <image src="/images/icon/circle.png"></image>
+      <text>正品保证</text>
+    </view>
+    <view class="detail-safe-item"  wx:if="{{goodsInfo.goodsinfo.is_best}}">
+      <image src="/images/icon/circle.png"></image>
+      <text>精品</text>
+    </view>
+    <view class="detail-safe-item" wx:if="{{goodsInfo.goodsinfo.is_new}}">
+      <image src="/images/icon/circle.png"></image>
+      <text>新品</text>
+    </view>
+    <view class="detail-safe-item" wx:if="{{goodsInfo.goodsinfo.is_hot}}">
+      <image src="/images/icon/circle.png"></image>
+      <text>热销推荐</text>
+    </view>
+  </view>
+</view>
+<view class="detail-display">
+  <view class="display-nav">
+    <block wx:for="{{tabNav}}">
+      <view class="{{item.actived ? 'actived' : ''}}" catchtap="changePosition" data-change="{{index}}">
+        <text>{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="display-contain">
+    <scroll-view scroll-x="{{allowMove}}" class="display-scroll" scroll-with-animation="true" scroll-left="{{scrollLeft}}">
+      <view class="scroll-view-item display-good">
+        <view class="wxParse" bindload="giveWidth" >
+          <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+        </view>
+      </view>
+      <view class="scroll-view-item display-more">
+        <view class="more-title">
+          <image src="/images/icon/detail-01.png"></image>
+          <text>产品规格</text>
+        </view>
+        <view class="more-contain">
+          <view wx:for="{{goodsInfo.goodsAttr}}" wx:if="{{item.attr_type == 0 && (item.attr_input_type == 0 || item.attr_input_type == 1)}}">
+            <text class="light">{{item.attr_name}}</text>
+            <text>{{item.attr_value}}</text>
+          </view>
+        </view>
+        <block wx:for="{{goodsInfo.goodsAttr}}" wx:if="{{item.attr_type == 0 && item.attr_input_type == 2}}">
+          <view class="more-title">
+            <image src="/images/icon/detail-02.png"></image>
+            <text>{{item.attr_name}}</text>
+          </view>
+          <view class="more-design">
+            <view>
+              <text class="more-text">{{item.attr_value}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class="scroll-view-item" style="margin-bottom:80rpx;">
+        <view class="comment-list">
+          <block wx:for="{{commentInfo}}">
+            <template is="comment"  data="{{...item}}"></template>
+          </block>
+        </view>
+        <view class="read-more" catchtap="loadBottom" wx:if="{{loadComment}}">
+          <text>查看更多</text>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="display-mask" style="{{'height:'+300+ 'rpx;'}}" bindtouchstart="cancleScroll" catchtouchend="openScroll"></view>
+  </view>
+</view>
+<view class="detail-fixed">
+  <view class="detail-fixed-icon" catchtap="goToBasket">
+    <image src="/images/icon/detail-04.png"></image>
+  </view>
+  <view class="detail-fixed-buy" catchtap="addBasket">
+    <text>加入购物车</text>
+  </view>
+</view>

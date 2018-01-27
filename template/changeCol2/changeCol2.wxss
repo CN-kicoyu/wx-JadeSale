@@ -1,0 +1,84 @@
+.exchange-col2 {
+  border: 1px solid #ccc;
+  background: white;
+  width: 357rpx;
+  display: flex;
+  flex-direction: column;
+  float:left;
+margin-left:10rpx;
+margin-bottom:11rpx;
+border-radius:4rpx;
+}
+
+.exchange-col2 > image {
+  width: 100%;
+  height: 357rpx;
+}
+
+.exchange-col2-title {
+  border-bottom: 1px solid #e2e2e2;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 15rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.exchange-col2-info {
+  display: flex;
+}
+
+.col2-info-btn {
+  width: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background: #ff9d01;
+  color: white;
+}
+
+.col2-info-price {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.col2-price {
+  display: flex;
+  flex-direction: row;
+  padding: 14rpx 5rpx;
+  align-items: center;
+}
+
+.col2-price > image {
+  width: 32rpx;
+  height: 26rpx;
+  margin-right: 12rpx;
+}
+
+.col2-price-current {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.col2-price-old {
+  font-size: 20rpx;
+  color: #999;
+  margin-left:8rpx;
+margin-top:4rpx;
+
+}
+
+.old-price {
+  position: relative;
+}
+
+.text-del {
+  display: block;
+  width: 105%;
+  position: absolute;
+  height: 1px;
+  background: #ccc;
+  top: 50%;
+  left: 0;
+}

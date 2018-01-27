@@ -1,0 +1,35 @@
+<import src="../../template/inBasket/inBasket.wxml" />
+
+
+<view wx:if="{{cartList.length===0}}" class="basket-none-wrap">
+    <image src="/images/index/nothing.png" class="basket-none"></image>
+    <text>ㄒoㄒ~~~，您的购物车空空的，快去选购吧~ </text>
+    <view class="basket-none-btn" catchtap="gotoChoose"><text>返回选购</text></view>
+</view>
+
+<view  wx:else>
+<block wx:for="{{cartList}}" wx:key="unique">
+<view class="basket-wrap">
+    <template is="inbasket" data="{{good:item,index:index}}"></template>
+</view>
+</block>
+<view class="basket-pay">
+    <view class="basket-pay-info">
+        <view class="pay-info-checkall" catchtap="chooseAll">
+            <icon type="{{isAllCheck ? 'success' : 'circle'}}" size="16" class="checkall" style="{{isAllCheck ? 'color:#f15352' : 'color:#fff'}}"/>
+            <text>全选</text>
+        </view>
+        <view class="pay-info-txt">
+            <text>总计：<text class="pay-money-num">￥{{totalAccount}}</text></text>
+            <text class="pay-config">不含运费</text>
+        </view>
+    </view>
+    <view class="basket-pay-money" wx:if="{{totalNum}}" catchtap="gotoPay">
+        <text>结算({{totalNum}})</text>
+    </view>
+    <view class="basket-pay-money pay-wait" wx:else>
+        <text>结算</text>
+    </view>
+</view>
+</view>
+

@@ -1,0 +1,54 @@
+<view style="background:white;margin-bottom:20rpx">
+  <text class="tip">订单信息</text>
+  <view class="content">
+    <view class="texts">
+      <text>订单号码：{{initData.order.order_sn}}</text>
+      <text>添加时间：{{initData.order.add_time}}</text>
+      <text>订单金额：{{initData.order.goods_amount}}</text>
+    </view>
+  </view>
+</view>
+<view style="background:white;margin-bottom:20rpx">
+  <text class="tip">注册信息</text>
+  <view class="texts">
+    <text>用户名：{{initData.user.username}}</text>
+    <text>手机号码：{{initData.user.mobile}}</text>
+  </view>
+</view>
+<view style="background:white;margin-bottom:20rpx">
+  <text class="tip">收款人信息</text>
+  <view class="texts">
+    <text>收款人：{{initData.bank.bank_user}}</text>
+    <text>收款账号：{{initData.bank.bank_card}}</text>
+    <text>收款银行：{{initData.bank.bank_name}}</text>
+    <text class="blue">特别说明：银行转账时需要添加<text class="red"> {{initData.user.username}} </text>至备注说明里</text>
+  </view>
+</view>
+<view style="background:white;margin-bottom:20rpx">
+  <view class="inputlist" style="flex-direction:column;align-items:flex-start">
+    <text class="tip">凭证样例：</text>
+    <view catchtap="onShowPic" style="padding:0 0 30rpx 30rpx;">
+      <view class="imglist">
+         <image src="http://image.ttzbxcx.com/upload/sample.jpg" class="img pic"/>
+      </view>
+    </view>
+  </view>
+</view>
+<view style="background:white;margin-bottom:20rpx">
+  <view class="inputlist" style="flex-direction:column;align-items:flex-start">
+    <text class="tip">上传凭证：</text>
+    <view catchtap="onPic" style="padding:0 0 30rpx 30rpx;">
+      <view wx:if="{{picUrl}}" class="imglist">
+        <block wx:for="{{picUrl}}">
+         <image src="{{item}}" class="img pic"/>
+        </block>
+      </view>
+      <view wx:else class="imgup pic">
+        <text class="pic-icon">+</text>
+        <text>最多上传1張</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<button form-type="submit" type="default" loading="{{isloading}}" hover-class="button-hover" class="btn" bindtap="bindButtonTap" > 提交 </button>

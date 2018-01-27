@@ -1,0 +1,111 @@
+.good-col {
+  display: flex;
+  flex-direction: column;
+  width: 372rpx;
+  background: #fff;
+  position: relative;
+}
+
+.goods-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 372rpx;
+  height: 372rpx;
+}
+
+.good-col-img {
+  width: 100%;
+  height: 100%;
+}
+
+.good-col-txt {
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #aaa;
+  padding: 0 10rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin-top: 20rpx;
+}
+
+.goods-prices {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20rpx 10rpx 10rpx;
+}
+
+.good-col-num {
+  color: #ccc;
+}
+
+.goods-infos-label {
+  width: 64rpx;
+  border-radius: 50px;
+  color: white;
+  position: absolute;
+  top: 20rpx;
+  right: -30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 20rpx;
+  padding: 0 25rpx;
+}
+
+.label-red {
+  background: #f96b69;
+}
+
+.label-yellow {
+  background: #ffd303;
+}
+
+.label-blue {
+  background: #1983d4;
+}
+
+.price-current {
+  color: #f96b69;
+  font-size: 28rpx;
+  margin-right: 30rpx;
+  line-height: 30rpx;
+  font-weight: bolder;
+}
+
+.price-old {
+  font-size: 24rpx;
+  color: #ccc;
+  position: relative;
+}
+
+.text-del {
+  display: block;
+  width: 105%;
+  position: absolute;
+  height: 1px;
+  background: #ccc;
+  top: 50%;
+  left: 0;
+}
+
+.goods-infos-time {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  padding-left: 20rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.time-click {
+  width: 19rpx;
+  height: 19rpx;
+  margin-right: 10rpx;
+}

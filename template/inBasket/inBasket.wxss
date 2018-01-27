@@ -1,0 +1,135 @@
+.inbasket {
+  white-space: nowrap;
+  height: 242rpx;
+}
+
+.inbasket-content, .inbasket-del {
+  display: inline-flex;
+  font-weight: bold;
+}
+
+.inbasket-content {
+  padding: 20rpx 0;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inbasket-content > image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 4px;
+  margin: 0 20rpx 0 0;
+  display: block;
+}
+
+.content-info {
+  padding: 2rpx 30rpx 0 0;
+  width: 470rpx;
+}
+
+.info-title {
+  display: block;
+  height: 62rpx;
+  overflow: hidden;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.info-attr {
+  font-size: 20rpx;
+  display: inline-block;
+  margin: 16rpx 0 10rpx;
+}
+
+.info-active {
+  background: #2a9dff;
+  border-radius: 4px;
+  font-size: 20rpx;
+  padding:4rpx 10rpx;
+color:white;
+text-align:center;
+margin-right:15rpx;
+
+}
+
+.info-buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.info-buy > text {
+  color: #f96b69;
+  font-size: 28rpx;
+  font-weight: bolder;
+  display: block;
+  margin-top: 10rpx;
+}
+
+.info-num {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.left, .right, .info-num input {
+  border: 1px solid #d1d1d1;
+  box-shadow: none;
+  outline: none;
+  background: white;
+  font-size: 28rpx;
+  height: 54rpx;
+  line-height: 50rpx;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.info-num button::after {
+  display: none;
+}
+
+.left {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  width: 50rpx;
+}
+
+.right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: 0;
+  width: 50rpx;
+}
+
+.info-num input {
+  border: 1px solid #d1d1d1;
+  width: 80rpx;
+}
+
+.inbasket-del {
+  color: white;
+  width: 100rpx;
+  text-align: center;
+  vertical-align: top;
+  padding: 20rpx 0;
+}
+
+.inbasket-del text {
+  background: #f96b69;
+  display: block;
+  height: 240rpx;
+  line-height: 240rpx;
+  padding: 0 50rpx;
+}
+
+.inbasket-check {
+    margin:auto 15rpx;
+}

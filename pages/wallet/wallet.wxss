@@ -1,0 +1,169 @@
+@import "../../template/walletDetail/walletDetail.wxss";
+
+.header {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  padding: 40rpx 0;
+  border-bottom: 1px solid #dedede;
+}
+
+.cell {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.cell:last-child {
+  border: 0;
+}
+
+.cell >text {
+  display: block;
+}
+
+.num {
+  font-size: 36rpx;
+  margin-bottom: 15rpx;
+  font-weight: bold;
+}
+
+.btnWrap {
+  padding: 42rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid #dedede;
+}
+
+.btnWrap> text {
+  width: 172rpx;
+  height: 68rpx;
+  border-radius: 4rpx;
+  border: 1px solid #00a0e9;
+  color: #00a0e9;
+  line-height: 68rpx;
+  text-align: center;
+  margin-right: 90rpx;
+}
+
+.btnWrap> text:last-child {
+  margin: 0;
+}
+
+.btnWrap> text.active {
+  background: #00a0e9;
+  color: white;
+}
+
+.list {
+  background: white;
+}
+
+.title {
+  display: block;
+  padding: 30rpx;
+  border-bottom: 1px solid #dedede;
+  font-size: 26rpx;
+}
+
+.scroll-view_H {
+  height: 84rpx;
+  line-height: 84rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #16222a;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.items {
+  height: 50rpx;
+  width: 138rpx;
+  background: #16222a;
+  line-height: 50rpx;
+  border-radius: 100px;
+  display: inline-block;
+  color: white;
+  margin: 0 20rpx;
+  text-align: center;
+}
+
+.items.active {
+  background: #ffcf55;
+  color: #333;
+}
+
+.bar-num, .nums {
+  width: 280rpx;
+  height: 280rpx;
+  margin: 0 auto;
+  position: relative;
+  color: white;
+}
+
+.texts {
+  width: 280rpx;
+  height: 280rpx;
+  font-size: 20rpx;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  padding-top: 70rpx;
+}
+
+.prices {
+  display: block;
+  margin-top: 25rpx;
+  font-size: 30rpx;
+}
+
+.contents {
+  width: 654rpx;
+  height: 422rpx;
+  border-radius: 8rpx;
+  background: #16222a;
+  position: relative;
+  text-align: center;
+  margin: 92rpx auto 50rpx;
+  padding-top: 52rpx;
+}
+
+.op1, .op2 {
+  width: 590rpx;
+  height: 20rpx;
+  position: absolute;
+  top: -20rpx;
+  left: 39rpx;
+  background: rgba(22, 34, 42, 0.7);
+  border-top-left-radius: 8rpx;
+  border-top-right-radius: 8rpx;
+}
+
+.op2 {
+  width: 530rpx;
+  top: -20px;
+  left: 70rpx;
+  height: 41rpx;
+}
+
+.btn-wrap {
+  padding-bottom: 30rpx;
+  text-align:center;
+  margin-top:40rpx;
+}
+
+.btn {
+  padding: 15rpx 60rpx;
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 4rpx;
+}
+.m-l{
+  margin-left: 20rpx;
+}

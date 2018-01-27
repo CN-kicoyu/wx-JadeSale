@@ -1,0 +1,63 @@
+.banks {
+  border: 1px solid #dedede;
+  margin-top:20rpx;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  height:160rpx;
+  overflow:hidden;
+}
+.bank-img {
+  width:220rpx;
+  text-align:center;
+  background: #ffcc00;
+}
+.bank-img > image {
+  width:86rpx;
+  height:86rpx;
+  padding:30px 0;
+  align-items: center;
+}
+
+.zhaoshang .bank-img {
+  background: #ff6855;
+}
+
+.jianshe .bank-img {
+  background: #ffcf55;
+}
+.nongye .bank-img {
+  background: #8fcb5a;
+}
+.bank-name {
+  flex:1;
+  padding:20rpx 40rpx;
+  font-size: 30rpx;
+  display:flex;
+  flex-direction: column;
+}
+.pull-l{
+  float: left;
+}
+.pull-r{
+  float: right;
+}
+.num {
+  font-size:36rpx;
+  font-weight:bold;
+  margin-top:25rpx;
+}
+.small {
+  font-size:26rpx;
+  color:#555;
+  margin-left:25rpx;
+}
+.no-img {
+  color:white;
+  font-size:100rpx;
+   line-height:140rpx;
+}
+.add-card {
+  color:#aaa;
+  padding-top:45rpx;
+}

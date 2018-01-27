@@ -1,0 +1,16 @@
+<template name="auctionnew">
+<view class="new-wrap">
+  <image src="http://oo3thr1aa.bkt.clouddn.com/auction-new-1.jpg" class="new-img"></image>
+  <text>解读维多利亚珠宝高品质优设计的诠释之美</text>
+  <view class="new-detail">
+  <view>
+    <text>通天玉公司文</text>
+    <text class="y-ml20">2017-04-18 02:35:34</text>
+    </view>
+    <view catchtap="onLoving">
+      <image src="{{!islove ? '/images/icon/love-off.png' : '/images/icon/love-on.png'}}" class="new-star"></image>
+      <text>收藏</text>
+    </view>
+  </view>
+  </view>
+</template>

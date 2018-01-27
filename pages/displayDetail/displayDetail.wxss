@@ -1,0 +1,116 @@
+@import "/template/maskAlert/maskAlert.wxss";
+.inbasket-content {
+  padding: 20rpx;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom:1px dashed #ccc;
+  display: flex;
+  background:white;
+}
+.inbasket-content > image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 4px;
+  margin: 0 20rpx 0 0;
+  display: block;
+}
+
+.content-info {
+  padding: 2rpx 0 0 0;
+  width: 464rpx;
+}
+
+.info-title {
+  display: block;
+  height: 84rpx;
+  overflow: hidden;
+  white-space: normal;
+  word-break: break-all;
+  font-size: 26rpx;
+}
+
+.info-attr {
+  font-size: 26rpx;
+  display: inline-block;
+  margin: 16rpx 0 10rpx;
+}
+
+.info-active {
+  background: #2a9dff;
+  border-radius: 4px;
+  font-size: 20rpx;
+  display: block;
+  padding: 4rpx 0;
+  color: white;
+  text-align: center;
+  width: 102rpx;
+}
+.info-remind {
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.info-remaind-img > image {
+  width:21rpx;
+  height:21rpx;
+  margin-right:10rpx;
+}
+.info-buy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: normal;
+  font-size: 26rpx;
+}
+
+.info-buy > text {
+  display: block;
+  margin-top: 10rpx;
+}
+
+
+.display-head {
+  position:relative;
+  overflow:hidden;
+}
+.display-head > image {
+  width:100%;
+  height:342rpx;
+  display:block;
+}
+.display-head-title {
+    background:rgba(0,0,0,.5);
+    color:white;
+    padding:23rpx 46rpx;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+.display-head-title > image {
+    height:22rpx;
+    width:22rpx;
+    margin-right:10rpx;
+    position:relative;
+    top:2rpx;
+}
+.display-info {
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  border-top:1px solid rgba(255,255,255,.5);
+  background:#323232;
+  color:white;
+} 
+.display-info > text {
+  flex:1;
+  border-right:1px solid rgba(255,255,255,.5);
+  text-align:center;
+  padding:26rpx 0;
+}
+.display-info > text:last-child {
+  border:none;
+}
+.display-lists {
+  margin-top:26rpx;
+}

@@ -1,0 +1,86 @@
+@import "../../template/inBasket/inBasket.wxss";
+
+
+.basket-wrap {
+  border-top: 1px solid #d1d1d1;
+  background: white;
+}
+
+.basket-pay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 98rpx;
+  color: white;
+  display: flex;
+}
+
+.basket-pay-info {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background: #4c4c4c;
+}
+
+.pay-info-checkall {
+  margin: 0 15rpx;
+  line-height: 98rpx;
+}
+
+.pay-info-txt {
+  margin-left: 70rpx;
+  display: flex;
+  flex-direction: column;
+  line-height: 34rpx;
+  margin-top: 8px;
+}
+
+.pay-money-num {
+  font-size: 30rpx;
+  font-weight: bolder;
+}
+
+.pay-config {
+  font-size: 20rpx;
+}
+
+.basket-pay-money {
+  width: 168rpx;
+  text-align: center;
+  line-height: 98rpx;
+  background: #2a9dff;
+}
+
+.basket-pay-money.pay-wait {
+  background: #aaa;
+  color:gray;
+}
+
+.checkall {
+  position: relative;
+  top: 8rpx;
+  margin-right: 13rpx;
+}
+
+.basket-none-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ccc;
+}
+
+.basket-none {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 29% auto 30rpx;
+}
+
+.basket-none-btn {
+  color: #aaa;
+  border: 1px solid #aaa;
+  padding: 15rpx 30rpx;
+  border-radius: 4px;
+  margin-top: 81rpx;
+}

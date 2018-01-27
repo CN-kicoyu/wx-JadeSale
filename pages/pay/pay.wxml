@@ -1,0 +1,4 @@
+<import src="/template/pay/pay.wxml" />
+
+<template is="pay" data="{{isAddressShow:isAddressShow,windowHeight:windowHeight,isShow:isShow,orderConfirm:orderConfirm}}"></template>
+ <view class="cdetail-btn" catchtap="gotoOrder">提交订单</view>

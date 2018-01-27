@@ -1,0 +1,27 @@
+<form class="register">
+  <view class="signin-wrap">
+    <text>用户名<text style="color:#ccc;">(商城登录名,请谨慎填写,不可更改)</text></text>
+    <input class="sign-input" placeholder="请设置用户名" maxlength="12" bindinput="nameInput"/>
+  </view>
+  <view class="signin-wrap">
+    <text>手机号</text>
+    <input class="sign-input" bindinput="mobileInput" placeholder="请输入手机号" maxlength="11" type="number"/>
+  </view>
+  <view class="signin-wrap">
+    <text>邀请码</text>
+    <input class="sign-input" bindinput="inviteCodeInput" placeholder="请输入邀请码" maxlength="11" type="text"/>
+  </view>
+  <view class="signin-wrap">
+    <text>密码</text>
+    <input class="sign-input" password placeholder="请设置密码" bindinput="pwdInput" maxlength="20"/>
+  </view>
+  <view class="signin-wrap">
+    <text>确认密码</text>
+    <input class="sign-input" password placeholder="请设置密码" bindinput="confirmPwdInput" maxlength="20"/>
+  </view>
+  <button form-type="submit" type="default" loading="{{isloading}}" hover-class="button-hover" class="btn" bindtap="bindButtonTap" disabled="{{btnDisabled}}" > 注册 </button>
+  <view class="text">
+    <text>我已经有账号了，前往</text>
+    <text style="text-decoration: underline;" catchtap="goSignin"> 登录 </text>
+  </view>
+</form>

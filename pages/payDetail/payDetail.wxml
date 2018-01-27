@@ -1,0 +1,33 @@
+<import src="../../template/goodOrder/goodOrder.wxml" />
+<view class="pay-address">
+  <view class="pay-address-title">
+    <text>配送地址</text>
+  </view>
+  <view class="pay-address-info">
+    <view>
+      <text style="margin-right:40rpx;">{{orderDetail.consignee}}</text>
+      <text>{{orderDetail.mobile}}</text>
+    </view>
+    <view>
+      <text>{{orderDetail.province}}{{orderDetail.city}}{{orderDetail.district}}{{orderDetail.address}}</text>
+    </view>
+  </view>
+  <image src="/images/index/hr.jpg" class="pay-info-end"></image>
+</view>
+<view class="item-list">
+  <view>
+    <text>订单编号：{{orderDetail.order_sn}}</text>
+    <text>下单时间：{{orderDetail.add_time}}</text>
+  </view>
+  <view>
+    <text>支付方式：{{orderDetail.pay_name}}</text>
+  </view>
+  <view>
+    <text>配送方式：{{orderDetail.shipping_name}}</text>
+    <text>快递单号：{{orderDetail.invoice_no}}</text>
+    <text>配送时间：{{orderDetail.shipping_time}}</text>
+  </view>
+</view>
+<view class="items">
+<template is="orderItem" data="{{...orderDetail,isBtnShow:isBtnShow}}"></template>
+</view>

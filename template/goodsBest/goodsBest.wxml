@@ -1,0 +1,24 @@
+<template name="goodsBest">
+  <view class="good-col">
+    <view class="goods-wrap">
+      <image src="{{goods_img}}" class="good-col-img" />
+      <view class="goods-infos-time" wx-if="{{overTime}}">
+        <image src="/images/icon/appointment2.png" class="time-click"></image>
+        <text>据结束时间：01天21小时43分</text>
+      </view>
+      <view class="goods-infos-label label-red" wx-if="{{is_hot === 1}}">火爆</view>
+      <view class="goods-infos-label label-yellow" wx-if="{{is_best === 1}}">精选</view>
+      <view class="goods-infos-label label-blue" wx-if="{{is_new === 1}}">推荐</view>
+    </view>
+    <text class="good-col-txt">{{goods_name}}</text>
+    <view class="goods-prices">
+      <view class="good-col-price">
+        <text class="price-current">￥ {{shop_price}}</text>
+        <text class="price-old" wx-if="{{oldPrice}}">￥ {{market_price}}
+          <text class="text-del"></text>
+        </text>
+      </view>
+      <text class="good-col-num" wx-if="{{hasWant}}">344人出价</text>
+    </view>
+  </view>
+</template>

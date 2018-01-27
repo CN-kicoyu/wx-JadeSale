@@ -1,0 +1,14 @@
+<template name="exhibitShow">
+  <view class="scrollshow" style="{{isExhibit ? 'width:350rpx;height:195rpx;' : 'width:250rpx;height:188rpx;'}}">
+    <image src="{{detail.imgURL}}" />
+    <view class="scrollshow-mask" wx:if="{{isExhibit}}">
+      <text>{{detail.begainTime}} ~ {{detail.overTime}}</text>
+    </view>
+  </view>
+  <text>{{detail.title}}</text>
+  <view class="scrollshow-info" wx:if="{{isExhibit}}">
+    <text class="scrollshow-willing" wx:if="{{detail.status === 1}}":>热拍中</text>
+    <text class="scrollshow-doing" wx:else>预展中</text>
+    <text>拍品{{detail.hasNum}}件</text>
+  </view>
+</template>

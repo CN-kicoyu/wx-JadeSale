@@ -1,0 +1,44 @@
+@import "../../template/goodOrder/goodOrder.wxss";
+@import "../../template/score/score.wxss";
+
+.order-item {
+  margin-top: 20rpx;
+}
+
+.order-item-data {
+  padding: 20rpx 30rpx;
+}
+
+.comment-score {
+  padding: 20rpx 30rpx 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-score > text {
+  margin-right: 40rpx;
+}
+
+.comment-content {
+  background: white;
+  padding-bottom:30rpx;
+}
+
+.comment-area {
+    border:1px solid #dedede;
+    margin:15px 30rpx;
+    padding:20rpx;
+    border-radius:4px;
+    width:auto;
+}
+
+.common-way {
+    margin:0 30rpx;
+}
+
+
+.common-btn {
+    width:80%;
+    font-size:26rpx;
+    margin-top:60rpx;
+}

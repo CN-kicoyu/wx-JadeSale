@@ -1,0 +1,2 @@
+<import src="../../template/detailInfo/detailInfo.wxml" />
+<template is="detailInfo" data="{{imgUrls:imgUrls}}"></template>

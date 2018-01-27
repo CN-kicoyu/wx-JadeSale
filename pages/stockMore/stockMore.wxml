@@ -1,0 +1,53 @@
+<view class="btns">
+  <text style="margin-right:30rpx" catchtap="goBack">+ 自选号码</text>
+  <text>+ 机选一注</text>
+</view>
+<view class="content">
+  <view class="list">
+    <text>猜两位数</text>
+    <text class="num">
+      <text style="margin-right:30rpx">8</text> 9</text>
+    <text class="money">投注：<text style="color:#ef5b03">900</text>玉豆</text>
+    <text style="width:50rpx;text-align:center">x</text>
+  </view>
+  <view class="list">
+    <text>猜一位数</text>
+    <text class="num">
+      <text style="margin-right:30rpx">8</text>
+    </text>
+    <text class="money">投注：<text style="color:#ef5b03">900</text>玉豆</text>
+    <text style="width:50rpx;text-align:center">x</text>
+  </view>
+  <view class="list">
+    <text>猜一位数</text>
+    <text class="num">
+      <text style="margin-right:30rpx">8</text>
+    </text>
+    <text class="money">投注：<text style="color:#ef5b03">1000</text>玉豆</text>
+    <text style="width:50rpx;text-align:center">x</text>
+  </view>
+  <view class="list">
+    <text>猜两位数</text>
+    <text class="num">
+      <text style="margin-right:30rpx">8</text> 9</text>
+    <text class="money">投注：<text style="color:#ef5b03">900</text>玉豆</text>
+    <text style="width:50rpx;text-align:center">x</text>
+  </view>
+  <view class="list">
+    <text>猜一位数</text>
+    <text class="num">
+      <text style="margin-right:30rpx">8</text>
+    </text>
+    <text class="money">投注：<text style="color:#ef5b03">900</text>玉豆</text>
+    <text style="width:50rpx;text-align:center">x</text>
+  </view>
+</view>
+<view class="cdetail-btn new-btn">
+<view class="info-num">
+  <text style="margin-right:30rpx">投注倍数</text>
+  <button type="default" disabled="{{isNum==1}}" class="left" catchtap="reduceNum">-</button>
+  <input type="text" value="{{isNum}}" bindblur="num" />
+  <button type="default" class="right" catchtap="addNum" >+</button>
+</view>
+</view>
+<view class="cdetail-btn" catchtap="changeShow">立即投注</view>

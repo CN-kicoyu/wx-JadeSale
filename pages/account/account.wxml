@@ -1,0 +1,10 @@
+<text class="warn">温馨提示：该模块填写后不可修改，后续的抵用券申请将以此为依据，请谨慎填写！</text>
+<view class="inputlist">
+  <text>矿交中心账号：</text>
+  <input type="text" value="{{userIdentity.trading_code}}" class="input" bindinput="codeInput"/>
+</view>
+<view class="inputlist">
+  <text>矿交中心用户名：</text>
+  <input type="text" value="{{userIdentity.trading_name}}" class="input" bindinput="nameInput"/>
+</view>
+<button form-type="submit" type="default" loading="{{isloading}}" hover-class="button-hover" class="btn" bindtap="bindButtonTap" disabled="{{btnDisabled}}" > 确认绑定 </button>

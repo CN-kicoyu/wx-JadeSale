@@ -1,0 +1,139 @@
+.maskdiv {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.mask-container {
+  background: white;
+  width: 534rpx;
+  height: 453rpx;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-left: -267rpx;
+  border-radius: 4rpx;
+}
+
+.mask-title {
+  height: 56rpx;
+  text-align: center;
+  line-height: 56rpx;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.icon-close {
+  position: absolute;
+  right: 12rpx;
+  top: 15rpx;
+  
+}
+
+.mask-content {
+  border-bottom: 1px solid #ccc;
+}
+
+.mask-section {
+  padding: 42rpx 50rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.mask-check {
+  flex-direction: column;
+}
+
+.mask-check > view {
+  margin-bottom: 15rpx;
+}
+
+.icon-check {
+  position: relative;
+  top: 5rpx;
+  margin-right: 10rpx;
+}
+
+.flex-col {
+  margin-top: 26rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.mask-phone {
+  margin-left: 48rpx;
+  margin-top: 15rpx;
+}
+
+.mask-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-comfirm {
+  width: 158rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  margin: 20rpx 0;
+  border-radius: 4rpx;
+  border: 1px solid #aaa;
+}
+
+.info-num {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left, .right, .info-num input {
+  border: 1px solid #d1d1d1;
+  box-shadow: none;
+  outline: none;
+  background: white;
+  font-size: 28rpx;
+  height: 64rpx;
+  line-height: 57rpx;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius:4rpx;
+}
+button[type="default"].right {
+  background: #ff790c;
+  border: 1px solid #ff790c;
+  color:white;
+}
+.info-num button::after {
+  display: none;
+}
+
+.left,.right {
+  width: 60rpx;
+}
+
+.info-num input {
+  border: 1px solid #d1d1d1;
+  width: 158rpx;
+  padding:5rpx 20rpx;
+  margin: 0 20rpx;
+}
+
+.bid-infos {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.bid-margin {
+  margin-top:25rpx;
+  margin-bottom:48rpx;
+}

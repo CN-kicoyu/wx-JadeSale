@@ -1,0 +1,51 @@
+<import src="/template/exhibitShow/exhibitShow.wxml" />
+<import src="/template/auctionNew/auctionNew.wxml" />
+<swiper class="banner" indicator-dots="true" autoplay="true" circular="true" indicator-color="#513737" indicator-active-color="#f96b69">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item.thumb}}" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="title-divi">
+  <text class="title">推荐专场</text>
+  <view class="more" catchtap="onGoingBid" data-section="1">
+    <text>更多</text>
+    <image src="/images/icon/arrow-right.png"></image>
+  </view>
+</view>
+<scroll-view scroll-x="true" class="scroll-shows" scroll-left="{{0}}" style="height:300rpx;">
+  <block wx:for="{{scrollshow.data}}">
+    <view class="subshow" catchtap="onDisplayDetail" data-id="{{scrollshow.data.displayID}}">
+      <template is="exhibitShow" data="{{detail:item,isExhibit:scrollshow.isExhibit}}"></template>
+    </view>
+  </block>
+</scroll-view>
+<view class="hr"></view>
+<view class="title-divi">
+  <text class="title">精选拍品</text>
+  <view class="more" catchtap="onGoingBid" data-section="0">
+    <text>更多</text>
+    <image src="/images/icon/arrow-right.png"></image>
+  </view>
+</view>
+<scroll-view scroll-x="true" class="scroll-shows" scroll-left="{{0}}" style="height:238rpx;">
+  <block wx:for="{{scrollgoods.data}}">
+    <view class="subgoods" catchtap="onAuctionDetail">
+      <template is="exhibitShow" data="{{detail:item,isExhibit:scrollgoods.isExhibit}}"></template>
+    </view>
+  </block>
+</scroll-view>
+<view class="hr"></view>
+<view class="title-divi">
+  <text class="title">竞拍资讯</text>
+  <view class="more"  catchtap="sorryTip">
+    <text>更多</text>
+    <image src="/images/icon/arrow-right.png"></image>
+  </view>
+</view>
+<view class="auction-news"  catchtap="sorryTip">
+      <template is="auctionnew"></template>
+      <template is="auctionnew"></template>
+      <template is="auctionnew"></template>
+</view>

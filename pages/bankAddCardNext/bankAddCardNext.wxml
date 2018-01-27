@@ -1,0 +1,28 @@
+<!--pages/bankAddCard/bankAddCard.wxml-->
+<text class="info">请填写本人所持有的银行卡信息</text>
+<view class="inputlist">
+  <text>姓名：</text>
+  <input type="text" value="刘德华" class="input" bindinput="isChange" />
+</view>
+<view class="inputlist" style="border:0">
+  <text>卡号：</text>
+  <input type="number" value="8789 8789 8789 8783" class="input" bindinput="isChange" />
+</view>
+<text class="info" style="color:#333;margin-bottom:20px;">中国农业银行 【储蓄卡】</text>
+<view class="inputlist">
+  <text>手机号：</text>
+  <input type="text" value="" class="input" bindinput="isChange" />
+</view>
+<view class="inputlist" style="border:0">
+  <text>验证码：</text>
+  <input type="number" value="" class="input" bindinput="isChange" />
+</view>
+<view class="next">
+  <view class="info">
+    <icon type="{{isCheck ? 'success' : 'circle'}}" size="14" class="check-btn" style="{{isCheck ? 'color:#f15352' : 'color:#cccccc'}}" data-index="{{index}}" catchtap="checkPay" />
+    <text>点击下一步后即表示同通天珠宝《用户使用协议》</text>
+  </view>
+  <view class="btn">
+    <button type="default" loading="{{isloading}}" form-type="submit" class="check-btn" bindtap="gotoNext" disabled="{{!isDisabled}}"> 下一步 </button>
+  </view>
+</view>

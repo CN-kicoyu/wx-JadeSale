@@ -1,0 +1,48 @@
+page {
+  font-family:"PingFang SC","Helvetica Neue","Microsoft Yahei",STHeiti,Tahoma,Simsun,Arial,sans-serif;
+  background: #eee;
+  font-size:26rpx;
+  color:#333;
+}
+
+.index-intro-goods {
+  overflow:hidden;
+  margin-bottom:10rpx;
+}
+
+.goodcol2 {
+  float:left;
+  margin-bottom:10rpx;
+  position:relative;
+}
+
+.goodcol2:nth-child(2n+1) {
+  margin-right:7rpx;
+}
+
+.good-col-price {
+    padding-bottom:10rpx;
+}
+
+.price-current {
+    color:#ffcf55;
+    font-size:26rpx;
+    margin-right:30rpx;
+    line-height:30rpx;
+    font-weight:bolder;
+}
+
+.price-old {
+    color:#cccccc;
+    position:relative;
+}
+
+.text-del {
+    display:block;
+    width:105%;
+    position:absolute;
+    height:1px;
+    background: #ccc;
+    top:50%;
+    left:0;
+}

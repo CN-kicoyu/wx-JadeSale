@@ -1,0 +1,106 @@
+<view class="{{isActived ? 'actived': ''}}">
+<view class="personal-bg">
+  <view class="personal-avatar">
+    <image src="{{userInfo.avatarUrl}}" class="personal-avatar-self"></image>
+    <view wx:if="{{true}}" class="personal-avatar-member">
+      <image src="/images/icon/member-01.png" class="personal-meb-1" />
+      <image src="/images/icon/member-02.png" class="personal-meb-2" />
+    </view>
+  </view>
+  <text class="personal-avatar-name">{{userDetail.username}}({{userInfo.nickName}})</text>
+  <view class="personal-avatar-hr"></view>
+</view>
+<image src="/images/index/personal-bg.jpg" class="personal-bg-bottom" />
+<view class="personal-menu">
+    <view class="personal-menu-col" catchtap="gotoWallet">
+      <view>
+        <image class="menu-icon" src="/images/icon/personal-icon-06.png" />
+        <text class="menu-text">我的钱包</text>
+      </view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </view>
+    <view class="personal-menu-col" catchtap="gotoOrder">
+      <view>
+        <image class="menu-icon" src="/images/icon/icon_7.png" />
+        <text class="menu-text">我的订单</text>
+      </view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </view>
+     <view class="personal-menu-col" catchtap="gotoEvaluate">
+      <view>
+        <image class="menu-icon" src="/images/icon/announce.png" />
+        <text class="menu-text">商品评价</text>
+      </view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </view>
+    <view class="personal-menu-col" catchtap="gotoMyAuction">
+      <view>
+        <image class="menu-icon" src="/images/icon/personal-icon-07.png" />
+        <text class="menu-text">我的拍卖(建设中...)</text>
+      </view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </view>
+    <view class="personal-menu-col" catchtap="gotoChangeGoods">
+      <view>
+        <image class="menu-icon" src="/images/icon/icon_8.png" />
+        <text class="menu-text">积分商城</text>
+      </view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </view>
+    <view class="personal-menu-col"  catchtap="gotoApplay">
+      <view>
+        <image class="menu-icon" src="/images/icon/personal-icon-02.png" />
+        <text class="menu-text">我的申请单</text>
+      </view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </view>
+    <view class="personal-menu-col" catchtap="gotoMortgage">
+      <view>
+        <image class="menu-icon" src="/images/icon/personal-icon-01.png" />
+        <text class="menu-text">矿交中心抵用券申请</text>
+      </view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </view>
+    <view class="personal-menu-col" catchtap="gotoBecome" wx:if="{{!userDetail.is_agent}}">
+      <view>
+        <image class="menu-icon" src="/images/icon/personal-icon-04.png" />
+        <text class="menu-text">我要成为合伙人</text>
+      </view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </view>
+     <view class="personal-menu-col" catchtap="gotoParter" wx:if="{{userDetail.is_agent}}">
+      <view>
+        <image class="menu-icon" src="/images/icon/personal-icon-04.png" />
+        <text class="menu-text">合伙人列表</text>
+      </view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </view>
+    <view class="personal-menu-col">
+      <view>
+        <image class="menu-icon" src="/images/icon/personal-icon-08.png" />
+        <text class="menu-text">我的业绩报表(建设中...)</text>
+      </view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </view>
+    <view class="personal-menu-col" catchtap="gotoAnnounce">
+      <view>
+        <image class="menu-icon" src="/images/icon/icon_9.png" />
+        <text class="menu-text">商城公告</text>
+      </view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </view>
+    <view class="personal-menu-col" catchtap="gotoMyset">
+      <view>
+        <image class="menu-icon" src="/images/icon/personal-icon-05.png" />
+        <text class="menu-text">个人设置</text>
+      </view>
+      <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+    </view>
+</view>
+
+<view class="mask" wx:if="{{isActived}}">
+  <view class="content">
+    <image src="http://oo3thr1aa.bkt.clouddn.com/personal-at.jpg" class="imgs" catchtap="goExchange" catchtap="gotoApplyAdmin"></image>
+  </view>
+</view>
+</view>

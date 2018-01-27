@@ -1,0 +1,9 @@
+<view class="inputlist">
+  <text>矿交中心申购单号：</text>
+  <input value="{{stockwallet.stock_sn}}" class="input" bindinput="stocksnInput"/>
+</view>
+<view class="inputlist">
+  <text>矿交中心申购金额：</text>
+  <input type="number" value="{{stockwallet.amount}}" maxlength="7" class="input" bindinput="amountInput"/>
+</view>
+<button form-type="submit" type="default" loading="{{isloading}}" hover-class="button-hover" class="btn" bindtap="bindButtonTap" disabled="{{btnDisabled}}" > 确认申请 </button>

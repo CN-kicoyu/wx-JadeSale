@@ -1,0 +1,25 @@
+<template name="exChange">
+    <view class="exchange-col2" catchtap="gotoChange"  data-goods_id="{{goods_id}}">
+        <image src="{{goods_img}}"></image>
+        <view class="exchange-col2-title">
+            <text>{{goods_name}}</text>
+        </view>
+        <view class="exchange-col2-info">
+            <view class="col2-info-price">
+                <view class="col2-price">
+                 <image src="/images/icon/change.png"></image>
+                 <text class="col2-price-current">{{exchange_integral}}</text>
+                 <view class="col2-price-old"><text>现金价:</text>
+                 <text class="old-price">￥{{shop_price}}<text class="text-del"></text></text> 
+                 </view>                
+                </view>
+                <view class="col2-progress">
+                  <progress percent="80" active color="#029ce4"/>
+                </view>
+            </view>
+            <view class="col2-info-btn"  catchtap="Change"  data-goods_id="{{goods_id}}">
+                <text>兑换</text>
+            </view>
+        </view>
+    </view>
+</template>

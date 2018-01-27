@@ -1,0 +1,65 @@
+page {
+  background: white;
+}
+.rink-title {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 70rpx;
+  border-bottom: 1px dashed #ccc;
+  align-items: center;
+  padding-left: 10rpx;
+}
+
+.bgred {
+  background: #fff4f4;
+  height: 64rpx;
+  line-height: 64rpx;
+  border-bottom: 1px solid #dedede;
+  font-weight: bold;
+  position:fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+}
+.rink-title:nth-of-type(2) {
+  margin-top: 64rpx;
+}
+.rink-title:last-child {
+  border:none;
+}
+.col {
+  flex: 1;
+}
+
+.rink {
+  flex: 1;
+  width: 60rpx;
+  padding: 5rpx 0;
+  display: block;
+  color: white;
+  height: 30rpx;
+  font-size: 20rpx;
+  background: #999;
+  border-radius: 50px;
+}
+
+.col2 {
+  flex: 2;
+}
+
+.col3 {
+  flex: 3;
+}
+
+.rink-top {
+  background: url('http://oo3thr1aa.bkt.clouddn.com/rink-top.png') no-repeat 0;
+  width: 60rpx;
+  flex: 1;
+  color: white;
+  font-size: 20rpx;
+  height: 52rpx;
+  align-self: center;
+  background-size: 100% 100%;
+  line-height: 66rpx;
+}

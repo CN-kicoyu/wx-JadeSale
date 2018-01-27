@@ -1,0 +1,59 @@
+<view class="inputlist">
+  <text>头像</text>
+  <image src="{{userInfo.avatarUrl}}" class="avatar"></image>
+</view>
+<view class="inputlist">
+  <text>用户名</text>
+  <text class="light">{{userDetail.username}}</text>
+</view>
+<view class="inputlist" wx:if="{{userDetail.realname}}">
+  <text>真实姓名</text>
+  <text class="light">{{userDetail.realname}}</text>
+</view>
+<view class="inputlist"  wx:if="{{userDetail.realname}}">
+  <text>性别</text>
+  <text class="light">{{userDetail.sex}}</text>
+</view>
+<view class="inputlist"  wx:if="{{userDetail.realname}}">
+  <text>出生日期</text>
+  <text class="light">{{userDetail.birthday}}</text>
+</view>
+<view class="inputlist" wx:if="{{userDetail.email}}">
+  <text>邮箱</text>
+  <text class="light">{{userDetail.email}}</text>
+</view>
+<view class="inputlist">
+  <text>手机号码</text>
+  <text class="light">{{userDetail.mobile}}</text>
+</view>
+<view class="inputlist">
+  <text>邀请码</text>
+  <text class="light">{{userDetail.invite_code}}</text>
+</view>
+<view class="inputlist" wx:if="{{userDetail.trading_name}}">
+  <text>矿交中心用户名</text>
+  <text class="light">{{userDetail.trading_name}}</text>
+</view>
+<view class="inputlist" wx:if="{{userDetail.trading_code}}">
+  <text>矿交中心账号</text>
+  <text class="light">{{userDetail.trading_code}}</text>
+</view>
+<view class="inputlist" catchtap="gotoAddress">
+  <text>我的收货地址</text>
+  <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+</view>
+<view class="inputlist" catchtap="gotoBank">
+  <text>我的银行卡</text>
+  <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+</view>
+<view class="inputlist" catchtap="gotoInformation" wx:if="{{!userDetail.realname}}">
+  <text>绑定个人信息</text>
+  <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+</view>
+<view class="inputlist" catchtap="gotoAccount" wx:if="{{!userDetail.trading_name}}">
+  <text>绑定矿交中心账号</text>
+  <view>
+  <text class="light" style="vertical-align:center;">{{userDetail.trading_name}}</text>
+  <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+  </view>
+</view>

@@ -1,0 +1,29 @@
+<template name="inbasket">
+<view>
+  <scroll-view scroll-x="true" class="inbasket">
+    <view class="inbasket-content">
+      <icon type="{{good.isCheck ? 'success' : 'circle'}}" size="16" class="inbasket-check" style="{{good.isCheck ? 'color:#f15352' : 'color:#cccccc'}}" data-index="{{index}}" catchtap="checkPay"/>
+      <image src="{{good.goods_img}}"></image>
+      <view class="content-info">
+        <text class="info-title">{{good.goods_name}}</text>
+        <text class="info-attr">颜色：褐色    尺码：均码</text>
+        <view wx:if="{{good.shop_price_name.length}}" style="margin-bottom:10rpx;">
+        <block>
+        <text class="info-active" style="{{'background:#'+item.color}}">{{good.shop_price_name}}</text>
+        </block>
+        </view>
+        <view class="info-buy">
+            <text>¥{{good.shop_price}}</text>
+            <view class="info-num">
+                <button type="default" disabled="{{good.goods_number==1}}" class="left" catchtap="reduceNum" data-index="{{good.rec_id}}" data-num="{{good.goods_number}}">-</button>
+                <input type="text" value="{{good.goods_number}}" data-index="{{good.rec_id}}" bindblur="num" />
+                <button type="default" class="right" catchtap="addNum" data-index="{{good.rec_id}}" data-num="{{good.goods_number}}">+</button>
+            </view>
+        </view>
+      </view>
+    </view>
+    <view class="inbasket-del" catchtap="deleteGood" data-index="{{good.rec_id}}"><text>删除</text></view>
+  </scroll-view>
+</view>
+</template>
+

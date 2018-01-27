@@ -1,0 +1,45 @@
+<view class="form-info-content">
+  <view class="info-wrap">
+    <view class="info-title">
+      <view class="info-title-circle"></view>
+      <view class="info-title-font">
+        <text>猜尾数</text>
+      </view>
+      <view class="info-title-circle"></view>
+    </view>
+    <view class="contain">
+      <view  class="info-contains">
+        <view class="info-contain">
+          <view class="guess-info">
+            <view class="guess-stock">
+              <text>20170326 - 上证指数</text>
+              <text>未中奖</text>
+            </view>
+            <view class="guess-time">
+              <text>2017-03-26 13:40:00</text>
+              <text>投注1000积分</text>
+            </view>
+          </view>
+          <image src="{{isOpen ? '/images/icon/arrow-up-gray.png' :'/images/icon/arrow-down-gray.png'}}" class="guess-down" catchtap="onOpen"></image>
+        </view>
+        <view class="more" wx:if="{{isOpen}}">
+          <view class="title">
+            <image src="/images/icon/yes.png" class="rink"></image>
+            <text>开奖点数：6933.27</text>
+          </view>
+          <view class="guess">
+            <text>12:34:44</text>
+            <view class="nums">
+              <text>猜后一位</text>
+              <text class="cl3">(3)</text>
+            </view>
+            <view class="score">
+              <text>未中奖</text>
+              <text class="cl3">投注1000积分</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

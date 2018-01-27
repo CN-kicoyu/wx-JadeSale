@@ -1,0 +1,26 @@
+<view class="wrap">
+  <view class="title">
+    <text class="name">合伙人列表</text>
+    <text>本人获得分红：<text style="color:#426eff;font-weight:bold">{{agentList.money}}%</text>
+    </text>
+  </view>
+  <view class="forms">
+    <view class="fhead bg">
+      <text>用户名</text>
+      <text>手机号</text>
+      <text>给出分红比例</text>
+    </view>
+    <view class="fhead" wx:for="{{agentList.agent}}">
+      <text>{{item.username}}</text>
+      <text>{{item.mobile}}</text>
+      <view wx:if="{{item.editItems}}"><input class="input" value="{{item.agent_money}}" bindinput="moneyInput"/></view>
+      <text wx:else>{{item.agent_money}}</text>
+      <image src="{{item.editItems ? '/images/icon/icon_6.png' : '/images/icon/icon_5.png'}}" class="edit" catchtap="onEdit" data-id="{{item.id}}" data-index="{{index}}"></image>
+    </view>
+
+    <view wx:if="{{agentList.agent.length===0}}" class="basket-none-wrap">
+      <image src="/images/index/nothing.png" class="basket-none"></image>
+      <text>ㄒoㄒ~~~，您没有合伙人~ </text>
+  </view>
+  </view>
+</view>

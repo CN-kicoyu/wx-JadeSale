@@ -1,0 +1,47 @@
+<import src="../../template/comment/comment.wxml" />
+<view class="mdetail-person">
+  <view class="share-author" catchtap="onMarketPerson">
+    <image src="/images/avatar.jpg" class="share-avatar"></image>
+    <text>吉蒂什伊苏</text>
+    <image src="/images/icon/vip-2.png" class="share-vip"></image>
+  </view>
+  <text>2017-04-22</text>
+</view>
+<swiper class="index-banner" indicator-dots="true" autoplay="{{false}}" circular="true" indicator-color="#513737" indicator-active-color="#f96b69" catchtap="onProductDetail">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class="mdetail-text">
+  <text>花了很长很长的时间才终于打磨出了这套产品，设计灵感来自于山海经里的一个传说。花了很长很长的时间才终于打磨出了这套产品，设计灵感来自于山海经里的一个传说。花了很长很长的时间才终于打磨出了这套产品，设计灵感来自于山海经里的一个传说。花了很长很长的时间才终于打磨出了这套产品，设计灵感来自于山海经里的一个传说。花了很长很长的时间才终于打磨出了这套产品，设计灵感来自于山海经里的一个传说。</text>
+  <text>花了很长很长的时间才终于打磨出了这套产品，设计灵感来自于山海经里的一个传说。花了很长很长的时间才终于打磨出了这套产品，设计灵感来自于山海经里的一个传说。花了很长很长的时间才终于打磨出了这套产品，设计灵感来自于山海经里的一个传说。花了很长很长的时间才终于打磨出了这套产品，设计灵感来自于山海经里的一个传说。花了很长很长的时间才终于打磨出了这套产品，设计灵感来自于山海经里的一个传说。</text>
+</view>
+<view class="mdetail-input">
+  <text class="mdetail-input-avator"></text>
+  <input placeholder="发表评论" focus="{{true}}" placeholder-style="color:#aaa" confirm-type="发表" type="text" />
+</view>
+<view class="mdetail-comments">
+  <template is="comment"></template>
+  <template is="comment"></template>
+  <template is="comment"></template>
+  <template is="comment"></template>
+  <template is="comment"></template>
+  <template is="comment"></template>
+  <template is="comment"></template>
+</view>
+<view class="share-icon">
+  <view style="margin-left:30rpx">
+    <image src="/images/icon/zan-off.png"></image>
+    <text>324</text>
+  </view>
+  <view>
+    <image src="/images/icon/detail-06.png" style="top:5rpx"></image>
+    <text>324</text>
+  </view>
+  <view style="margin-right:30rpx">
+    <image src="/images/icon/detail-07.png"></image>
+    <text>324</text>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+
+<view class="inputlist">
+  <text>登录密码</text>
+  <view>
+    <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+  </view>
+</view>
+<view class="inputlist">
+  <text>绑定手机</text>
+  <view>
+  <text class="light" style="vertical-align:center;">{{userDetail.mobile}}</text>
+  </view>
+</view>
+<view class="inputlist">
+  <text>支付密码</text>
+  <view>
+  <text class="light" style="vertical-align:center;">安全程度：<text style="color:#8fcb5a">高</text></text>
+  <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+  </view>
+</view>
+<view class="inputlist">
+  <text>设置密保</text>
+  <view>
+  <text class="light" style="vertical-align:center;">未设置</text>
+  <image class="menu-arrow" src="/images/icon/arrow-right.png" />
+  </view>
+</view>

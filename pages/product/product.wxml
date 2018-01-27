@@ -1,0 +1,29 @@
+<import src="/template/goodCol2/goodCol2.wxml" />
+
+<view class="product-title">
+  <view class="bg"></view>
+  <image src="/images/icon/logo.png" class="logo"></image>
+  <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+    <block wx:for="{{categoryList}}">
+      <text class="items {{item.active?'active':''}}" data-index="{{index}}" data-id="{{item.cat_id}}"  catchtap="changeCategory">{{item.cat_name}}</text>
+    </block>
+  </scroll-view>
+</view>
+
+
+<view wx:if="{{appInfo.length===0}}" class="basket-none-wrap">
+  <image src="/images/index/nothing.png" class="basket-none"></image>
+  <text>ㄒoㄒ~~~，当前分类没有商品~ </text>
+</view>
+<view class="index-intro-goods" wx:else>
+  <block wx:for="{{appInfo}}" wx:key="unique">
+    <view class="goodcol2">
+      <view bindtap='goodsInfo' data-goods_id="{{item.goods_id}}">
+        <template is="goodCol2" data="{{...item}}"></template>
+      </view>
+      <view class="good-basket" style="{{item.putBasket ? 'background:#e76663;' : 'background:rgba(255,255,255,.8);'}}" catchtap="putToBasket" data-index="{{index}}"  wx:if="{{false}}">
+        <image src="{{item.putBasket ? '/images/icon/basket-c-1.png' : '/images/icon/basket-c-0.png'}}"></image>
+      </view>
+    </view>
+  </block>
+</view>

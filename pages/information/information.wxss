@@ -1,0 +1,48 @@
+.inputlist {
+  border-bottom: 1px solid #dedede;
+  padding: 25rpx 30rpx;
+  background: white;
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.inputlist text {
+  color: #ccc;
+  margin-right: 30rpx;
+}
+
+.inputlist .input {
+  font-family: "PingFang SC",
+                 "Helvetica Neue",
+                 "Microsoft Yahei",
+                 STHeiti,
+                 Tahoma,
+                 Simsun,
+                 Arial,
+                 sans-serif;
+  font-size: 26rpx;
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button[type="default"].btn {
+  width: 558rpx;
+  margin-top: 200rpx;
+  color: #fff;
+  background: #ffcf55;
+  font-size: 26rpx;
+  padding: 10rpx 0;
+}
+.warn {
+  display: block;
+  margin-bottom:20rpx;
+  padding:20rpx 30rpx;
+  background: #ffe5e5;
+}

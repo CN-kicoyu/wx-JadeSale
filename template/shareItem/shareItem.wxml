@@ -1,0 +1,45 @@
+<template name="shareItem">
+  <view class="share-wrap">
+    <view class="share-author" catchtap="onMarketPerson">
+      <image src="/images/avatar.jpg" class="share-avatar"></image>
+      <text>{{author}}</text>
+      <image src="/images/icon/vip-2.png" class="share-vip" wx:if="{{isvip}}"></image>
+    </view>
+    <view class="share-title" catchtap="onMarketDetail">
+      <text class="share-theme"># {{theme}} #</text>
+      <text>{{content}}</text>
+    </view>
+    <view class="share-img">
+      <block wx:for="{{img}}">
+        <image src="{{item}}"></image>
+      </block>
+    </view>
+    <view class="share-goods" catchtap="onProductDetail" wx:if="{{price}}">
+      <image class="share-goods-img" src="{{img[0]}}"></image>
+      <view class="share-goods-title">
+        <text>{{title}}</text>
+        <text class="color-red">￥ {{price}}.00</text>
+      </view>
+      <image src="/images/icon/arrow-right.png" class="share-goods-go"></image>
+    </view>
+    <view class="share-comment" catchtap="onMarketDetail">
+      <block wx:for="{{comment}}">
+        <text>{{item.name}}：{{item.title}}</text>
+      </block>
+    </view>
+    <view class="share-icon">
+      <view>
+        <image src="/images/icon/zan-off.png"></image>
+        <text>324</text>
+      </view>
+      <view>
+        <image src="/images/icon/detail-06.png" style="top:5rpx"></image>
+        <text>324</text>
+      </view>
+      <view>
+        <image src="/images/icon/detail-07.png"></image>
+        <text>324</text>
+      </view>
+    </view>
+  </view>
+</template>

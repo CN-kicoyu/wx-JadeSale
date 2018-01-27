@@ -1,0 +1,49 @@
+<import src="/template/pay/pay.wxml" />
+
+<view class="nav-contain" wx:if="{{!isPayShow}}">
+  <view class="head">
+    <view class="line">
+      <text class="title">充值账户</text>
+      <text>{{username}}</text>
+    </view>
+    <view class="line">
+      <text class="title">账户余额</text>
+      <text class="red">￥{{money}}</text>
+    </view>
+  </view>
+  <text class="name">充值余额</text>
+  <view class="boxs">
+    <view class="{{activeIndex==50 ? 'box active' : 'box'}}" data-index='50' catchtap="onChoose">
+      <text>50元</text>
+      <image src="/images/icon/checked.png"></image>
+    </view>
+    <view class="{{activeIndex==100 ? 'box active' : 'box'}}" data-index='100' catchtap="onChoose">
+      <text>100元</text>
+      <image src="/images/icon/checked.png"></image>
+    </view>
+    <view class="{{activeIndex==400 ? 'box active' : 'box'}}" data-index='400' catchtap="onChoose">
+      <text>300元</text>
+      <image src="/images/icon/checked.png"></image>
+    </view>
+    <view class="{{activeIndex==1000 ? 'box active' : 'box'}}" data-index='1000' catchtap="onChoose">
+      <text>1000元</text>
+      <image src="/images/icon/checked.png"></image>
+    </view>
+  </view>
+  <input type="text" value="{{activeIndex}}" class="input" bindinput="isChange" />
+  <text class="name">充值说明</text>
+  <view class="tip">
+    <text>1. 兑换比率为1：{{exchange}}</text>
+  </view>
+  <view class="tip">
+    <text>2. 充值方式暂不支持支付宝充值</text>
+  </view>
+  <view class="btn">
+    <button type="default" loading="{{isloading}}" form-type="submit" class="check-btn" bindtap="gotoNext" disabled="{{!isDisabled}}"> 确定 </button>
+  </view>
+</view>
+<view wx:else>
+  <template is="pay" data="{{isAddressShow:isAddressShow,dataHeight:dataHeight,isShow:isShow,orderConfirm:orderConfirm}}"></template>
+  <view class="cdetail-btn" catchtap="gotoPay">确认支付</view>
+</view>
+

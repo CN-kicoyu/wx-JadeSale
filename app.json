@@ -1,0 +1,102 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/productDetail/productDetail",
+    "pages/auctionDetail/auctionDetail",
+    "pages/marketPersonal/marketPersonal",
+    "pages/market/market",
+    "pages/bidRink/bidRink",
+    "pages/addressEdit/addressEdit",
+    "pages/basket/basket",
+    "pages/process/process",
+    "pages/applyAdmin/applyAdmin",
+    "pages/account/account",
+    "pages/recharge/recharge",
+    "pages/mortgage/mortgage",
+    "pages/mortgageApply/mortgageApply",
+    "pages/packageDetail/packageDetail",
+    "pages/wallet/wallet",
+    "pages/product/product",
+    "pages/applay/applay",
+    "pages/changeDetail/changeDetail",
+    "pages/firstRead/firstRead",
+    "pages/become/become",
+	  "pages/changeGoods/changeGoods",
+    "pages/convert/convert",
+    "pages/bank/bank",
+    "pages/bankAddCard/bankAddCard",
+    "pages/bankAddCardNext/bankAddCardNext",
+    "pages/returnDetail/returnDetail",
+    "pages/information/information",
+    "pages/return/return",
+    "pages/order/order",
+    "pages/evaluate/evaluate",
+    "pages/personal/personal",
+    "pages/parter/parter",
+    "pages/signIn/signIn",
+    "pages/upload/upload",
+    "pages/success/success",
+    "pages/register/register",
+    "pages/displayDetail/displayDetail",
+    "pages/mySet/mySet",
+    "pages/set/set",
+    "pages/safe/safe",
+    "pages/myAuction/myAuction",
+    "pages/modifyPd/modifyPd",
+    "pages/security/security",
+    "pages/index/index",
+    "pages/intro/intro",
+    "pages/record/record",
+    "pages/stockMore/stockMore",
+    "pages/stocks/stocks",
+    "pages/detailTravel/detailTravel",
+    "pages/goingBid/goingBid",
+    "pages/announce/announce",
+    "pages/address/address",     
+    "pages/payDetail/payDetail",
+    "pages/pay/pay",
+    "pages/welfare/welfare",
+    "pages/travelShop/travelShop",
+    "pages/travel/travel",
+    "pages/travelList/travelList",
+    "pages/marketDetail/marketDetail",
+    "pages/auction/auction",
+    "pages/against/against",
+    "pages/exchange/exchange",
+    "pages/comment/comment"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#fff"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#333333",
+    "selectedColor": "#ffcf55",
+    "list":[
+      {
+        "pagePath": "pages/product/product",
+        "text": "商城主页",
+        "iconPath": "images/icon/index-icon-1-0.png",
+        "selectedIconPath": "images/icon/index-icon-1-1.png"
+      },
+      {
+        "pagePath": "pages/basket/basket",
+        "text": "购物车",
+        "iconPath": "images/icon/index-icon-3-0.png",
+        "selectedIconPath": "images/icon/index-icon-3-1.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "images/icon/index-icon-4-0.png",
+        "selectedIconPath": "images/icon/index-icon-4-1.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket":"10000",
+    "uploadFile":"10000",
+    "downloadFile": 10000
+  }
+}

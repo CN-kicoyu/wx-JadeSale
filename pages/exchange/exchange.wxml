@@ -1,0 +1,106 @@
+<view class="exchange-head">
+  <text class="head-account">9083.00</text>
+  <text>当前可提取积分</text>
+</view>
+<view class="exchange-entry">
+  <view class="exchange-entry-icon" catchtap="gotoShop">
+    <image src="/images/icon/exchange-01.png"></image>
+    <text>积分商城</text>
+  </view>
+  <view class="exchange-hr"></view>
+  <view class="exchange-entry-icon" catchtap="sorryTip">
+    <image src="/images/icon/exchange-02.png"></image>
+    <text>积分提现</text>
+  </view>
+</view>
+<view class="exchange-list">
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩...）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{true ? 'color:#da2eff' : 'color:#43ef00'}}">{{true ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩...）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{true ? 'color:#da2eff' : 'color:#43ef00'}}">{{true ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{false ? 'color:#da2eff' : 'color:#43ef00'}}">{{false ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{false ? 'color:#da2eff' : 'color:#43ef00'}}">{{false ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view><view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩...）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{true ? 'color:#da2eff' : 'color:#43ef00'}}">{{true ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{false ? 'color:#da2eff' : 'color:#43ef00'}}">{{false ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{false ? 'color:#da2eff' : 'color:#43ef00'}}">{{false ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩...）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{false ? 'color:#da2eff' : 'color:#43ef00'}}">{{false ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{false ? 'color:#da2eff' : 'color:#43ef00'}}">{{false ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+</view>

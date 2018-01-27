@@ -1,0 +1,93 @@
+<template name="exchangeList">
+<view class="exchange-list">
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩...）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{true ? 'color:#da2eff' : 'color:#43ef00'}}">{{true ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩...）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{true ? 'color:#da2eff' : 'color:#43ef00'}}">{{true ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{false ? 'color:#da2eff' : 'color:#43ef00'}}">{{false ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{false ? 'color:#da2eff' : 'color:#43ef00'}}">{{false ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view><view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩...）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{true ? 'color:#da2eff' : 'color:#43ef00'}}">{{true ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{false ? 'color:#da2eff' : 'color:#43ef00'}}">{{false ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{false ? 'color:#da2eff' : 'color:#43ef00'}}">{{false ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩...）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{false ? 'color:#da2eff' : 'color:#43ef00'}}">{{false ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+  <view class="exchange-list-item">
+    <view>
+      <text class="exchange-txt">购物返积分（通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩通天玉玛瑙玉佩）</text>
+      <text class="exchange-item-time">2017-03-25 00:20:39</text>
+    </view>
+    <view class="exchange-item-right">
+      <text style="{{false ? 'color:#da2eff' : 'color:#43ef00'}}">{{false ? '+' : '-'}}3000.00</text>
+      <text class="exchange-item-time">成功</text>
+    </view>
+  </view>
+</view>
+</template>

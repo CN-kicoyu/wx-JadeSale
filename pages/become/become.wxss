@@ -1,0 +1,96 @@
+/* pages/firstRead/firstRead.wxss */
+.wrap {
+    background: black url('http://ohcaq1mqd.bkt.clouddn.com/bg-01.jpg') no-repeat bottom right;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    z-index:-1;
+}
+.logo {
+    margin-top:40rpx;
+    color:#fff;
+    height:210rpx;
+    display:flex;
+    flex-direction:column;
+    padding-top:26rpx;
+    position:relative;
+    text-align:center;
+}
+.bg {
+  position:absolute;
+  width:187rpx;
+  height:207rpx;
+  top:0;
+  left:50%;
+  margin-left:-93rpx;
+}
+.img {
+    width: 47rpx;
+    height:56rpx;
+    margin-bottom:22rpx;
+    align-self:center;
+}
+.logo-title {
+    font-size:36rpx;
+}
+.title {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    color:#fff;
+}
+.hr {
+    width:114rpx;
+    height:2rpx;
+    background:rgba(255, 255, 255, .7);
+    display:block;
+    position:relative;
+    text-align:right;
+}
+.circle {
+    position:absolute;
+    right:-12rpx;
+    display:inline-block;
+    top:-6rpx;
+    width:12rpx;
+    height:12rpx;
+    border-radius:100%;
+    background:rgba(255, 255, 255, .7);
+}
+.content {
+  color:#fff;
+  background:rgba(255, 255, 255, .3);
+  border-radius: 10rpx;
+  padding:35rpx 30rpx;
+  width:590rpx;
+  margin:50rpx auto 100rpx;
+}
+.name {
+  display: block;
+  margin-bottom:26rpx;
+}
+.txt {
+  margin-bottom:50rpx;
+  display: block;
+  
+}
+button[type="default"].btn {
+  width: 558rpx;
+  margin-top: 80rpx;
+  color: #fff;
+  background: #ffcf55;
+  font-size: 26rpx;
+  padding: 10rpx 0;
+}
+.texts {
+  background: white;
+  border-radius:4rpx;
+  height:466rpx;
+  width: 100%;
+  padding:30rpx;
+  box-sizing: border-box;
+  color: #333;
+}
